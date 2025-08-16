@@ -7,6 +7,8 @@ import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
 import { useState } from "react";
 import { LoadingScreen } from "@/components/ui/loading-screen";
+import { useEffect } from "react";
+import Lenis from "@studio-freight/lenis";
 
 import Home from "@/pages/Home";
 import About from "@/pages/About";
@@ -42,6 +44,25 @@ function Router() {
 }
 
 function App() {
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+    });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
   return (
     <div className="scroll-smooth">
       <QueryClientProvider client={queryClient}>

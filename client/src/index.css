@@ -4,10 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
-
 :root {
   --background: hsl(0, 0%, 0%);
   --foreground: hsl(0, 0%, 100%);
@@ -305,4 +301,8 @@ video:-webkit-full-screen {
   height: 100% !important;
   object-fit: contain !important;
   background: black;
+}
+
+html {
+  scroll-behavior: smooth;
 }
