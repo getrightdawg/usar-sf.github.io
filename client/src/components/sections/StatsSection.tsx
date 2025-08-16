@@ -5,14 +5,14 @@ interface CounterProps {
   end: number;
   suffix?: string;
   duration?: number;
-  start: boolean; // Added prop to control when counting starts
+  start: boolean;
 }
 
 function Counter({ end, suffix = "", duration = 2, start }: CounterProps) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    if (!start) return; // Don't start until section is visible
+    if (!start) return;
 
     let startTime: number;
     let animationFrame: number;
