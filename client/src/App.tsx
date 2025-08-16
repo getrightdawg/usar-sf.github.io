@@ -8,6 +8,8 @@ import { Footer } from "@/components/layout/Footer";
 import { useState } from "react";
 import { LoadingScreen } from "@/components/ui/loading-screen";
 import { useEffect } from "react";
+import ScrollToTop from "@/components/ui/scrolltotop";
+
 import Lenis from "@studio-freight/lenis";
 
 import Home from "@/pages/Home";
@@ -68,6 +70,7 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
           <Toaster />
+          <ScrollToTop />
           <Router />
         </TooltipProvider>
       </QueryClientProvider>
