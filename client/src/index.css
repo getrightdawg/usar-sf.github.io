@@ -1,0 +1,308 @@
+/**
+ * index.css
+ *
+ * Main global stylesheet for the website.
+ * - Imports Google Fonts: Inter and Rajdhani
+ * - Sets up Tailwind base, components, and utilities
+ * - Defines CSS custom properties (variables) for colors, fonts, and UI elements
+ * - Configures dark mode variables
+ * - Adds base styles for body, fonts, and borders
+ * - Defines custom utility classes and keyframe animations
+ * - Provides responsive typography and spacing
+ * - Styles for focus states, fullscreen videos, and GPU acceleration
+ */
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
+/* Tailwind base, components, utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root CSS variables */
+:root {
+  /* General UI colors */
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(0, 0%, 100%);
+  --card: hsl(0, 0%, 6.7%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --popover: hsl(0, 0%, 0%);
+  --popover-foreground: hsl(0, 0%, 100%);
+
+  /* Primary/secondary/accent colors */
+  --primary: hsl(0, 0%, 100%);
+  --primary-foreground: hsl(0, 0%, 0%);
+  --secondary: hsl(0, 0%, 13.3%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(0, 0%, 13.3%);
+  --muted-foreground: hsl(0, 0%, 40%);
+  --accent: hsl(0, 0%, 13.3%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --border: hsl(0, 0%, 13.3%);
+  --input: hsl(0, 0%, 13.3%);
+  --ring: hsl(0, 0%, 83.1%);
+  --radius: 0.5rem;
+
+  /* ASF-specific colors */
+  --asf-black: hsl(0, 0%, 0%);
+  --asf-dark: hsl(0, 0%, 6.7%);
+  --asf-gray-dark: hsl(0, 0%, 13.3%);
+  --asf-gray: hsl(0, 0%, 40%);
+  --asf-gray-light: hsl(0, 0%, 80%);
+  --asf-accent: hsl(45, 100%, 70%);
+  --asf-accent-dark: hsl(45, 100%, 55%);
+
+  /* Fonts */
+  --font-inter: "Inter", sans-serif;
+  --font-rajdhani: "Rajdhani", sans-serif;
+}
+
+/* Dark mode overrides */
+.dark {
+  /* same variables with dark-specific adjustments */
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(0, 0%, 100%);
+  --card: hsl(0, 0%, 6.7%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --popover: hsl(0, 0%, 0%);
+  --popover-foreground: hsl(0, 0%, 100%);
+  --primary: hsl(0, 0%, 100%);
+  --primary-foreground: hsl(0, 0%, 0%);
+  --secondary: hsl(0, 0%, 13.3%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(0, 0%, 13.3%);
+  --muted-foreground: hsl(0, 0%, 40%);
+  --accent: hsl(0, 0%, 13.3%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --border: hsl(0, 0%, 13.3%);
+  --input: hsl(0, 0%, 13.3%);
+  --ring: hsl(0, 0%, 83.1%);
+}
+
+/* Base styles using Tailwind layers */
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: var(--font-inter);
+  }
+
+  .font-rajdhani {
+    font-family: var(--font-rajdhani);
+  }
+}
+
+/* Custom utility classes and animations */
+@layer utilities {
+  /* Gradient backgrounds */
+  .hero-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(0, 0%, 0%) 0%,
+      hsl(0, 0%, 6.7%) 50%,
+      hsl(0, 0%, 13.3%) 100%
+    );
+  }
+
+  .professional-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(0, 0%, 0%) 0%,
+      hsl(0, 0%, 3%) 25%,
+      hsl(0, 0%, 6.7%) 75%,
+      hsl(0, 0%, 10%) 100%
+    );
+  }
+
+  .accent-gradient {
+    background: linear-gradient(
+      90deg,
+      var(--asf-accent) 0%,
+      var(--asf-accent-dark) 100%
+    );
+  }
+
+  /* Glow border effect */
+  .glow-border {
+    position: relative;
+    background: var(--asf-dark);
+    border: 1px solid var(--asf-gray-dark);
+  }
+
+  .glow-border::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    padding: 1px;
+    background: linear-gradient(
+      45deg,
+      transparent,
+      var(--asf-accent),
+      transparent
+    );
+    border-radius: inherit;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .glow-border:hover::before {
+    opacity: 0.6;
+  }
+
+  /* Floating animation */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Marquee scrolling text */
+  .marquee {
+    animation: marquee 25s linear infinite;
+  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Shimmer animation */
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  /* Text colors */
+  .text-asf-black {
+    color: var(--asf-black);
+  }
+  .text-asf-dark {
+    color: var(--asf-dark);
+  }
+  .text-asf-gray-dark {
+    color: var(--asf-gray-dark);
+  }
+  .text-asf-gray {
+    color: var(--asf-gray);
+  }
+  .text-asf-gray-light {
+    color: var(--asf-gray-light);
+  }
+  .text-asf-accent {
+    color: var(--asf-accent);
+  }
+
+  /* Background colors */
+  .bg-asf-black {
+    background-color: var(--asf-black);
+  }
+  .bg-asf-dark {
+    background-color: var(--asf-dark);
+  }
+  .bg-asf-gray-dark {
+    background-color: var(--asf-gray-dark);
+  }
+  .bg-asf-gray {
+    background-color: var(--asf-gray);
+  }
+  .bg-asf-gray-light {
+    background-color: var(--asf-gray-light);
+  }
+  .bg-asf-accent {
+    background-color: var(--asf-accent);
+  }
+  .bg-asf-accent-dark {
+    background-color: var(--asf-accent-dark);
+  }
+
+  /* Border colors */
+  .border-asf-gray-dark {
+    border-color: var(--asf-gray-dark);
+  }
+  .border-asf-gray {
+    border-color: var(--asf-gray);
+  }
+  .border-asf-accent {
+    border-color: var(--asf-accent);
+  }
+}
+
+/* Responsive text and padding for mobile devices */
+@media (max-width: 768px) {
+  .responsive-text-lg {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+  .responsive-text-xl {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+  .responsive-text-2xl {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+  .responsive-padding {
+    padding: 1rem;
+  }
+}
+
+/* Focus outline for accessibility */
+*:focus-visible {
+  outline: 2px solid hsl(56, 100%, 50%);
+  outline-offset: 2px;
+}
+
+/* Fullscreen video adjustments */
+video:fullscreen,
+video:-webkit-full-screen {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  background: black;
+}
+
+/* GPU acceleration helper */
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Scroll behavior for HTML element */
+html {
+  scroll-behavior: auto;
+}
