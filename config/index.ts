@@ -643,18 +643,18 @@ export const HomeConfig = {
       name: "Combat Infantryman Badge",
       image: "images/awards/CIB.png",
       description:
-        "The Combat Infantryman Badge (CIB) is a United States Army military decoration. The badge is issued to infantrymen who fought in active ground combat while assigned as members of an infantry unit",
+        "Awarded to infantrymen who personally fought in active ground combat while serving with an infantry unit. Recognizes direct engagement with enemy forces.",
       requirements: [
-        "Be an infantryman satisfactorily performing infantry duties;",
-        "Assigned to an infantry unit during such time as the unit is engaged in active ground combat;",
-        "Actively participate in such ground combat. Combat against another group acknowledged by QMC and approved by both Command and Army Staff",
+        "Be an infantryman satisfactorily performing infantry duties",
+        "Assigned to an infantry unit engaged in active ground combat",
+        "Actively participate in such ground combat against a force acknowledged by QMC and approved by both Command and Army Staff",
       ],
     },
     {
       name: "Marksmanship Badges",
       image: "images/awards/Marksmanship.png",
       description:
-        "The Marksmanship Badges are U.S. military badges or civilian badges which are awarded to personnel upon successful completion of a weapons qualification course (known as marksmanship qualification badges). This badge can be earned by passing the marksmanship course. Based on your score you will receive a different title. Expert Marksmanship - achieved higher grades in a marksmanship course. Sharpshooter - achieved satisfactory grades in a marksmanship course. Marksman - completed marksmanship course with no other achievements",
+        "Awarded upon completion of a marksmanship qualification course. Levels are based on performance: Expert (highest), Sharpshooter (proficient), and Marksman (basic).",
       requirements: [
         "Complete the Marksmanship Qualification Course in the John F. Kennedy Special Warfare Center and School",
         "Achieve a qualifying score or higher",
@@ -664,7 +664,7 @@ export const HomeConfig = {
       name: "Expert Infantryman Badge",
       image: "images/awards/EIB.png",
       description:
-        "The Expert Infantryman Badge (EIB) is a special skills badge of the United States Army. The Combat Infantryman’s Badge (CIB) is issued to infantrymen for participation in ground combat while the EIB is presented for completion of a course of testing designed to demonstrate proficiency in infantry skills. Currently, the Expert Infantryman Badge is awarded to U.S. Army personnel who hold infantry or special forces military occupational specialties with the exception of soldiers with occupational specialty of Special Forces. To be eligible for EIB, the soldier must complete a number of prerequisites and pass a battery of graded tests on basic infantry skills",
+        "Awarded to infantry and select special operations personnel who successfully complete a rigorous battery of tests demonstrating mastery of basic infantry skills.",
       requirements: [
         "Complete the Expert Infantryman Badge Qualification Course in the John F. Kennedy Special Warfare Center and School",
       ],
@@ -673,7 +673,7 @@ export const HomeConfig = {
       name: "Army Pathfinder Badge",
       image: "images/awards/PFB.png",
       description:
-        "The Pathfinder Badge is a military badge of the United States Army awarded to soldiers who complete the Pathfinder course in ASOC",
+        "Recognizes soldiers who complete the Pathfinder Course, specializing in navigation, air traffic control, and establishing landing zones for airborne operations.",
       requirements: [
         "Complete the Pathfinder Badge Course in the John F. Kennedy Special Warfare Center and School",
       ],
@@ -682,7 +682,7 @@ export const HomeConfig = {
       name: "Military Freefall Badge",
       image: "images/awards/MFFB.png",
       description:
-        "Complete a Military Freefall course recognized by QMC and Army Staff and serve for 6 consecutive months, earning the title of Jumpmaster",
+        "Awarded for successful completion of the Military Freefall Course and subsequent service as a qualified freefall parachutist. Recognizes jumpmasters after sustained service.",
       requirements: [
         "Complete the Military Freefall Course in the John F. Kennedy Special Warfare Center and School",
       ],
@@ -691,7 +691,7 @@ export const HomeConfig = {
       name: "Special Operations Diver Badge",
       image: "images/awards/Diver.png",
       description:
-        "The Special Operations Diver Badge is a military badge awarded by the U.S. Army for the successful completion of the Combat Diver Qualification Course, signifying that the soldier is qualified to conduct Special Forces Underwater Operations",
+        "Recognizes soldiers who complete the Combat Diver Qualification Course, certifying them to conduct Special Forces underwater operations.",
       requirements: [
         "Complete the Combat Diver Qualification Course in the John F. Kennedy Special Warfare Center and School",
       ],
@@ -700,7 +700,7 @@ export const HomeConfig = {
       name: "Ranger Tab",
       image: "images/awards/RTab.png",
       description:
-        "The U.S. Army Ranger Tab is a qualification tab authorized upon completion of the U.S. Army Ranger School by a member of the U.S. Military",
+        "Authorized upon successful completion of U.S. Army Ranger School. Symbolizes exceptional leadership and endurance under extreme conditions.",
       requirements: [
         "Complete the Ranger School Course in the John F. Kennedy Special Warfare Center and School",
       ],
@@ -709,7 +709,7 @@ export const HomeConfig = {
       name: "Army Instructor Identification Badge",
       image: "images/awards/AIIB.png",
       description:
-        "The Army Instructor Identification Badge (AIIB) is an identification badge that recognizes specific instructors within all commands and divisions. Arguably, instructors make up a vital portion of this army, which for such, have been given an identification badge to display their contributions and efforts into pursuing the army forwards",
+        "Recognizes instructors who significantly contribute to training and professional development across the force. Displays dedication to advancing the Army’s mission.",
       requirements: [
         "Complete the Army Instructor Course in the Recruiting and Retention College",
         "This badge is only available to the 10th Special Forces Group",
@@ -719,7 +719,7 @@ export const HomeConfig = {
       name: "Army Master Instructor Identification Badge",
       image: "images/awards/MAIB.png",
       description:
-        "The Army Instructor Identification Badge (AIIB) is an identification badge that recognizes specific instructors within all commands and divisions. Arguably, instructors make up a vital portion of this army, which for such, have been given an identification badge to display their contributions and efforts into pursuing the army forwards",
+        "Recognizes senior instructors who demonstrate advanced instructional expertise and leadership in developing future soldiers.",
       requirements: [
         "Complete the Army Master Instructor Course in the Recruiting and Retention College",
         "This badge is only available to the 10th Special Forces Group",
@@ -729,7 +729,7 @@ export const HomeConfig = {
       name: "Jungle Tab",
       image: "images/awards/JTab.png",
       description:
-        "The U.S. Army Jungle Tab is a qualification tab authorized upon completion of the U.S. Army Jungle Operations Training Course by a member of the U.S. Military",
+        "Awarded upon completion of the Jungle Operations Training Course, recognizing proficiency in operating in jungle and tropical environments.",
       requirements: [
         "Complete the Jungle Tab Course in the 1st Infantry Division",
       ],
@@ -738,9 +738,9 @@ export const HomeConfig = {
       name: "Driver-W Clasp",
       image: "images/awards/Driver.png",
       description:
-        "The Driver and Mechanic Badge is a military special skill badge of the United States Army which was first created in July of 1942. The badge is issued to drivers, mechanics, and special equipment operators to denote the attainment of a high degree of skill in the operation and maintenance of motor vehicles. The badge is strictly limited for Enlisted service members only. The Driver and Mechanic Badge offers 5 claps: Driver - M (for motorcycles), Driver - T (for tracked vehicles), Driver - W (for wheeled vehicles), Mechanic (for automotive or allied vehicles), Operator - S (for special mechanical equipment). Soldiers who obtained the Driver and Mechanic Badge may wear a maximum of 3 clasps at any given time",
+        "Part of the Driver and Mechanic Badge series, the Driver-W Clasp recognizes skill in the operation and maintenance of wheeled vehicles. Soldiers may earn additional clasps for other vehicle types but may display up to three.",
       requirements: [
-        "Complete the Mechanic and Driver-W Course in the 1st Cavarly Division",
+        "Complete the Mechanic and Driver-W Course in the 1st Cavalry Division",
       ],
     },
     {
@@ -748,7 +748,7 @@ export const HomeConfig = {
       image:
         "https://upload.wikimedia.org/wikipedia/commons/4/46/US_Military_Basic_Military_Parachutist_Badge.png",
       description:
-        "The United States Army Parachutist badge is awarded to all military personnel of any service who completed the U.S. Army Airborne Schools. It signifies that the soldier is a trained military parachutist, and is qualified to participate in airborne operations.",
+        "Awarded to soldiers who complete the U.S. Army Airborne School, signifying qualification to conduct military parachute operations.",
       requirements: [
         "Complete the Special Forces Qualification Course and serve for 2 consecutive weeks",
       ],
@@ -757,7 +757,7 @@ export const HomeConfig = {
       name: "Army Air Assault Badge",
       image: "images/awards/AAB.png",
       description:
-        "The United States Army Air Assault Badge is awarded by the U.S. Army for successful completion of the Air Assault School",
+        "Recognizes soldiers who complete the Air Assault School, specializing in helicopter insertion, sling-load operations, and rappelling.",
       requirements: [
         "Complete the Air Assault Course in the 101st Airborne Division",
       ],
@@ -766,11 +766,11 @@ export const HomeConfig = {
       name: "Combat Medical Badge",
       image: "images/awards/CMB.png",
       description:
-        "The Combat Medical Badge (CMB) is an award of the United States Army. Any member of the Army Medical department who is assigned or attached to a ground combat arms unit of brigade or smaller size which provides medical support during any period in which the unit was engaged in ground combat is eligible for the CMB",
+        "Awarded to medical personnel who accompany combat units into battle and directly support soldiers under fire.",
       requirements: [
         "Be a medical operator satisfactorily performing medical duties",
-        "Assigned to a medical unit during such time as the unit is engaged in active ground combat",
-        "Actively participate in such ground combat. Combat against another group acknowledged by QMC and approved by both Command and Army Staff",
+        "Assigned to a medical unit engaged in active ground combat",
+        "Actively participate in such ground combat acknowledged by QMC and approved by both Command and Army Staff",
         "This badge is only available to the 5th Special Forces Group",
       ],
     },
@@ -778,7 +778,7 @@ export const HomeConfig = {
       name: "Expert Field Medical Badge",
       image: "images/awards/EFMB.png",
       description:
-        "The Expert Field Medical Badge (EFMB)  is a United States Army special skills badge first created on 18th of June 1965. This badge is the non-combat equivalent of the Combat Medical Badge (CMB) and is issued to U.S. military personnel who successfully complete a set of qualification tests, including both written and performance portions",
+        "The non-combat equivalent of the Combat Medical Badge. Awarded to medical personnel who pass demanding written and performance-based tests of field medical skills.",
       requirements: [
         "Complete the Expert Field Medical Badge Course in the John F. Kennedy Special Warfare Center and School",
         "This badge is only available to the 5th Special Forces Group",
@@ -788,7 +788,7 @@ export const HomeConfig = {
       name: "ASF Combat Service Identification Badge",
       image: "images/awards/CSIB.png",
       description:
-        "Combat Service Identification Badges, also known as deployment patches, are badges used to identify soldiers who've been deployed into a combat area/mission while serving in a unit",
+        "Deployment patches awarded to soldiers who serve in a combat area or mission with their unit. Each deployment earns a unique patch.",
       requirements: [
         "Attend a deployment against a foreign enemy. The soldier cannot earn the same deployment patch multiple times versus the same group",
       ],
@@ -797,7 +797,7 @@ export const HomeConfig = {
       name: "Special Forces Tab",
       image: "images/awards/SFTab.png",
       description:
-        "The Special Forces Tab is a service school qualification tab of the United States Army, awarded to any soldier completing the Special Forces Qualification Course",
+        "Awarded upon successful completion of the Special Forces Qualification Course, marking official entry into the U.S. Army Special Forces.",
       requirements: [
         "Complete the Special Forces Qualification Course in the Army Special Forces",
       ],
@@ -806,7 +806,7 @@ export const HomeConfig = {
       name: "Arctic Tab",
       image: "images/awards/ATab.png",
       description:
-        "The U.S. Army Arctic Tab is a qualification tab authorized upon completion of the U.S. Army Cold Weather Leaders Course by a member of the U.S. Military",
+        "Awarded to soldiers who complete the Cold Weather Leaders Course, demonstrating the ability to operate effectively in arctic conditions.",
       requirements: [
         "Complete the Cold Weather Leaders Course in the Army Special Forces",
       ],
@@ -815,7 +815,7 @@ export const HomeConfig = {
       name: "Antarctica Service Medal",
       image: "images/awards/Antarctica.png",
       description:
-        "Awarded to a person who has completed an Antarctica expedition without death",
+        "Awarded to personnel who successfully complete an Antarctica expedition and return without casualty.",
       requirements: [
         "Attend a deployment to Antarctica and complete it without death",
       ],
@@ -824,7 +824,7 @@ export const HomeConfig = {
       name: "Armed Forces Expeditionary Medal",
       image: "images/awards/AFExp.png",
       description:
-        "Awarded to an individual when deployed against a foreign enemy. Added to uniforms automatically on the basis of having a Combat Action Badge or Combat Infantryman Badge adorned onto your uniform",
+        "Awarded for service in military operations against a foreign enemy. Automatically authorized for holders of the Combat Infantryman Badge or Combat Action Badge.",
       requirements: [
         "Obtain the Combat Action Badge or the Combat Infantryman Badge",
       ],
@@ -833,32 +833,77 @@ export const HomeConfig = {
       name: "Global War on Terrorism Expeditionary Medal",
       image: "images/awards/GWTE.png",
       description:
-        "Awarded to an individual when deployed against a foreign enemy",
+        "Recognizes service members who deployed in support of the Global War on Terrorism against foreign enemies.",
       requirements: ["Attend a deployment against a foreign enemy"],
     },
     {
       name: "Armed Forces Service Medal",
       image: "images/awards/AFS.png",
       description:
-        "Awarded for completing an expedition without dying in an expedition zone that does not have tis own unique expeditionary medal",
+        "Awarded for completing a deployment in an expeditionary zone without incurring casualty, in areas not covered by a specific medal.",
       requirements: ["Attend a deployment to Mt. Everest"],
     },
     {
       name: "Army Overseas Service Ribbon",
       image: "images/awards/AOS.png",
       description:
-        "Awarded to an individual when deployed against a foreign enemy",
+        "Recognizes soldiers who complete overseas deployments in support of U.S. Army operations.",
       requirements: ["Attend a deployment against a foreign enemy"],
     },
     {
       name: "Joint Service Achievement",
       image: "images/awards/JSA.png",
       description:
-        "The Joint Service Achievement ribbon is an award available to soldiers who have participated in a total of fifteen joint events (deployments + other types of joints in total) supported by Army Foreign Affairs. Past events will not count, only events after 9/10/2023 will count",
+        "Awarded to soldiers who participate in at least fifteen joint events (deployments or operations) with allied forces after 9/10/2023.",
       requirements: [
         "Attend a joint event with an ally or against a foreign enemy",
       ],
     },
+    {
+    name: "Southwest Asia Service Medal",
+    image: "images/awards/SWAsia.png",
+    description:
+      "Awarded to personnel who participated in operations or deployments during the Southwest Asia Campaign.",
+    requirements: [
+      "Complete four consecutive deployments not within the same calendar week",
+    ],
+  },
+  {
+    name: "Kosovo Campaign Medal",
+    image: "images/awards/Kosovo.png",
+    description:
+      "Awarded to personnel who participated in operations or deployments during the Kosovo Campaign.",
+    requirements: [
+      "Complete three consecutive deployments not within the same calendar week",
+    ],
+  },
+  {
+    name: "Afghanistan Campaign Medal",
+    image: "images/awards/Afghanistan.png",
+    description:
+      "Awarded to personnel who participated in operations or deployments during the Afghanistan Campaign.",
+    requirements: [
+      "Complete three consecutive deployments not within the same calendar week",
+    ],
+  },
+  {
+    name: "Iraq Campaign Medal",
+    image: "images/awards/Iraq.png",
+    description:
+      "Awarded to personnel who participated in operations or deployments during the Iraq Campaign.",
+    requirements: [
+      "Complete four consecutive deployments not within the same calendar week",
+    ],
+  },
+  {
+    name: "Army Sea Duty Medal",
+    image: "images/awards/SeaDuty.png",
+    description:
+      "Awarded to personnel who participated in operations or deployments during the Army Sea Duty Campaign.",
+    requirements: [
+      "Complete three consecutive deployments not within the same calendar week",
+    ],
+  },
   ],
 };
 
