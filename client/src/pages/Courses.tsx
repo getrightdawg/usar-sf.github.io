@@ -179,6 +179,29 @@ export default function Courses() {
                     </div>
                   ))}
                 </div>
+                <div className="mt-12 p-6 bg-asf-dark/70 rounded-lg border border-asf-accent/20">
+                  <h5 className="text-xl font-rajdhani font-bold text-asf-accent mb-4">
+                    ARMY STAFF REVIEW
+                  </h5>
+                  <div className="flex items-center mb-3">
+                    <div className="flex">
+                      <span className="text-asf-accent">★</span>
+                      <span className="text-asf-gray-light">★</span>
+                      <span className="text-asf-gray-light">★</span>
+                      <span className="text-asf-gray-light">★</span>
+                      <span className="text-asf-gray-light">★</span>
+                    </div>
+                    <span className="ml-2 text-asf-gray-light text-sm">
+                      0.5 / 5
+                    </span>
+                  </div>
+                  <p className="text-asf-gray-light italic">
+                    "i'm never doing ts again🥀"
+                  </p>
+                  <p className="mt-2 text-sm text-asf-gray">
+                    — MC_T1gerTY
+                  </p>
+                </div>
               </div>
             </div>
           </motion.div>
