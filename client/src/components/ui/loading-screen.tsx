@@ -18,7 +18,7 @@ export function LoadingScreen({ onComplete }: LoadingScreenProps) {
   ];
 
   useEffect(() => {
-    const duration = 3000; // 3 seconds
+    const duration = 3000;
     const interval = 50;
     const increment = 100 / (duration / interval);
 
@@ -26,7 +26,6 @@ export function LoadingScreen({ onComplete }: LoadingScreenProps) {
       setProgress((prev) => {
         const newProgress = Math.min(prev + increment, 100);
 
-        // Update loading text based on progress
         if (newProgress < 20) setLoadingText(loadingMessages[0]);
         else if (newProgress < 40) setLoadingText(loadingMessages[1]);
         else if (newProgress < 60) setLoadingText(loadingMessages[2]);

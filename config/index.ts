@@ -490,17 +490,13 @@ export const HomeConfig = {
   ],
 
   marqueeTexts: [
-    "NO EXCUSES",
-    "ONLY ELITE",
-    "DE OPPRESSO LIBER",
+    "WE FREE THE OPPRESSED",
     "WE STRIKE FIRST",
-    "FEAR NONE",
-    "SURVIVE OR DIE",
+    "FEAR NO ONE",
+    "KILL OR BE KILLED",
     "HONOR IN BLOOD",
-    "GRIND NEVER STOPS",
-    "MISSION FIRST",
-    "STRENGTH ABOVE ALL",
     "FEW, BUT DEADLY",
+    "NO RETREAT",
   ],
   events: [
     {
