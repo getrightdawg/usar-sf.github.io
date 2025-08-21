@@ -459,7 +459,412 @@ export const CoursesConfig = {
   },
 };
 
-export const HomeConfig = {};
+export const HomeConfig = {
+  hero: {
+    particles: {
+      amount: 25,
+      delay: 4,
+      driftX: 20,
+      driftY: 10,
+    },
+    backgroundImage: "images/propaganda/image6.png",
+    title: {
+      line1: "ARMY",
+      line2: "SPECIAL FORCES",
+    },
+    motto: {
+      latin: "De Oppresso Liber",
+      english: "To Free the Oppressed",
+    },
+    ctaButtons: [
+      { label: "JOIN THE ELITE", link: "/recruitment", primary: true },
+      { label: "LEARN MORE", link: "/about", primary: false },
+    ],
+    scrollText: "SCROLL TO EXPLORE",
+  },
+
+  stats: [
+    { value: 100, label: "Active Personnel", suffix: "+" },
+    { value: 80, label: "Deployments/Operations Hosted", suffix: "+" },
+    { value: 98, label: "Success Rate", suffix: "%" },
+  ],
+
+  marqueeTexts: [
+    "NO EXCUSES",
+    "ONLY ELITE",
+    "DE OPPRESSO LIBER",
+    "WE STRIKE FIRST",
+    "FEAR NONE",
+    "SURVIVE OR DIE",
+    "HONOR IN BLOOD",
+    "GRIND NEVER STOPS",
+    "MISSION FIRST",
+    "STRENGTH ABOVE ALL",
+    "FEW, BUT DEADLY",
+  ],
+  events: [
+    {
+      id: "deployments",
+      title: "DEPLOYMENTS",
+      description:
+        "Intensive large-scale missions designed to challenge tactical skills, teamwork, and endurance.",
+      action: "Click to view more →",
+    },
+    {
+      id: "mock-operations",
+      title: "MOCK OPERATIONS",
+      description:
+        "Simulated combat exercises that push teams to practice strategies and refine coordination under realistic scenarios.",
+      action: "Click to view more →",
+    },
+    {
+      id: "joint-events",
+      title: "JOINT EVENTS",
+      description:
+        "Collaborative exercises with allied units or other USAR units to enhance interoperability and combat synergy.",
+      action: "Click to view more →",
+    },
+    {
+      id: "breach-trainings",
+      title: "BREACH TRAININGS",
+      description:
+        "Specialized sessions focused on close-quarters combat, entry tactics, and rapid room-clearing drills.",
+      action: "Click to view more →",
+    },
+    {
+      id: "wargames",
+      title: "WARGAMES",
+      description:
+        "Full-scale simulated battles designed to test strategy, adaptability, and coordination between multiple USAR units.",
+      action: "Click to view more →",
+    },
+    {
+      id: "scrimmages",
+      title: "SCRIMMAGES",
+      description:
+        "Friendly competitive engagements to refine team tactics, reaction time, and combat readiness against other units or internal squads.",
+      action: "Click to view more →",
+    },
+  ],
+
+  eventDetails: {
+    deployments: {
+      title: "DEPLOYMENTS",
+      description:
+        "Operational missions where teams are pushed to operate under prolonged pressure, testing leadership, coordination, and adaptability in complex environments.",
+      mechanics: {
+        duration: "1+ hour(s)",
+        participants: "All Special Forces personnel unless restricted",
+        objective:
+          "Complete assigned mission objectives, typically neutralizing opposing forces or securing key objectives, under operational guidelines provided by the host.",
+      },
+    },
+    "mock-operations": {
+      title: "MOCK OPERATIONS",
+      description:
+        "Tactical simulations designed to hone decision-making, unit cohesion, and precision under controlled combat scenarios.",
+      mechanics: {
+        duration: "1+ hour(s)",
+        participants: "All Special Forces personnel unless restricted",
+        objective:
+          "Varies per scenario; could involve capturing objectives, rescuing hostages, or coordinated elimination of targets.",
+      },
+    },
+    "joint-events": {
+      title: "JOINT EVENTS",
+      description:
+        "Events where USAR teams work alongside allied or external units to practice combined operations and strengthen inter-unit effectiveness.",
+      mechanics: {
+        duration: "1+ hour(s)",
+        participants:
+          "All Special Forces personnel unless restricted & USAR units or allied groups.",
+        objective: "Depends on the type of Joint Event.",
+      },
+    },
+    "breach-trainings": {
+      title: "BREACH TRAININGS",
+      description:
+        "Focused training sessions emphasizing rapid entry, room clearing, and CQB techniques in high-intensity simulations.",
+      mechanics: {
+        duration: "30+ minutes",
+        participants: "All Special Forces personnel unless restricted",
+        objective:
+          "Depends, though usually the objective is to clear a specific number of killhouses or complete breaching exercises.",
+      },
+    },
+    wargames: {
+      title: "WARGAMES",
+      description:
+        "Large-scale simulated battles where units test strategies, adaptability, and teamwork in complex scenarios against opposing forces.",
+      mechanics: {
+        duration: "2+ hour(s)",
+        participants: "All Special Forces units involved in the exercise",
+        objective:
+          "Execute mission objectives while coordinating with multiple units; simulate real combat conditions with strategic planning and operational execution.",
+      },
+    },
+    scrimmages: {
+      title: "SCRIMMAGES",
+      description:
+        "Competitive yet friendly engagements designed to sharpen skills, improve communication, and evaluate team performance under pressure.",
+      mechanics: {
+        duration: "1+ hour(s)",
+        participants: "Selected teams or all Special Forces personnel",
+        objective:
+          "Refine tactics and unit cohesion through controlled matches against other squads or internal teams; scoring and rules are scenario-dependent.",
+      },
+    },
+  },
+
+  benefits: [
+    {
+      title: "Elite Status",
+      description:
+        "Join an elite force recognized for excellence and tactical expertise.",
+    },
+    {
+      title: "Brotherhood",
+      description:
+        "Build lifelong bonds with highly trained and committed comrades.",
+    },
+    {
+      title: "Presidential Recognition",
+      description:
+        "There are reasons why the Army Special Forces has the Army Presidential Unit Citation.",
+    },
+  ],
+
+  privileges: [
+    "Access to operations and deployments",
+    "Advanced tactical training programs",
+    "Elite unit recognition across USAR",
+    "Opportunity for Designated Fighter status",
+    "Leadership development opportunities",
+  ],
+
+  awards: [
+    {
+      name: "Combat Infantryman Badge",
+      image: "images/awards/CIB.png",
+      description:
+        "The Combat Infantryman Badge (CIB) is a United States Army military decoration. The badge is issued to infantrymen who fought in active ground combat while assigned as members of an infantry unit",
+      requirements: [
+        "Be an infantryman satisfactorily performing infantry duties;",
+        "Assigned to an infantry unit during such time as the unit is engaged in active ground combat;",
+        "Actively participate in such ground combat. Combat against another group acknowledged by QMC and approved by both Command and Army Staff",
+      ],
+    },
+    {
+      name: "Marksmanship Badges",
+      image: "images/awards/Marksmanship.png",
+      description:
+        "The Marksmanship Badges are U.S. military badges or civilian badges which are awarded to personnel upon successful completion of a weapons qualification course (known as marksmanship qualification badges). This badge can be earned by passing the marksmanship course. Based on your score you will receive a different title. Expert Marksmanship - achieved higher grades in a marksmanship course. Sharpshooter - achieved satisfactory grades in a marksmanship course. Marksman - completed marksmanship course with no other achievements",
+      requirements: [
+        "Complete the Marksmanship Qualification Course in the John F. Kennedy Special Warfare Center and School",
+        "Achieve a qualifying score or higher",
+      ],
+    },
+    {
+      name: "Expert Infantryman Badge",
+      image: "images/awards/EIB.png",
+      description:
+        "The Expert Infantryman Badge (EIB) is a special skills badge of the United States Army. The Combat Infantryman’s Badge (CIB) is issued to infantrymen for participation in ground combat while the EIB is presented for completion of a course of testing designed to demonstrate proficiency in infantry skills. Currently, the Expert Infantryman Badge is awarded to U.S. Army personnel who hold infantry or special forces military occupational specialties with the exception of soldiers with occupational specialty of Special Forces. To be eligible for EIB, the soldier must complete a number of prerequisites and pass a battery of graded tests on basic infantry skills",
+      requirements: [
+        "Complete the Expert Infantryman Badge Qualification Course in the John F. Kennedy Special Warfare Center and School",
+      ],
+    },
+    {
+      name: "Army Pathfinder Badge",
+      image: "images/awards/PFB.png",
+      description:
+        "The Pathfinder Badge is a military badge of the United States Army awarded to soldiers who complete the Pathfinder course in ASOC",
+      requirements: [
+        "Complete the Pathfinder Badge Course in the John F. Kennedy Special Warfare Center and School",
+      ],
+    },
+    {
+      name: "Military Freefall Badge",
+      image: "images/awards/MFFB.png",
+      description:
+        "Complete a Military Freefall course recognized by QMC and Army Staff and serve for 6 consecutive months, earning the title of Jumpmaster",
+      requirements: [
+        "Complete the Military Freefall Course in the John F. Kennedy Special Warfare Center and School",
+      ],
+    },
+    {
+      name: "Special Operations Diver Badge",
+      image: "images/awards/Diver.png",
+      description:
+        "The Special Operations Diver Badge is a military badge awarded by the U.S. Army for the successful completion of the Combat Diver Qualification Course, signifying that the soldier is qualified to conduct Special Forces Underwater Operations",
+      requirements: [
+        "Complete the Combat Diver Qualification Course in the John F. Kennedy Special Warfare Center and School",
+      ],
+    },
+    {
+      name: "Ranger Tab",
+      image: "images/awards/RTab.png",
+      description:
+        "The U.S. Army Ranger Tab is a qualification tab authorized upon completion of the U.S. Army Ranger School by a member of the U.S. Military",
+      requirements: [
+        "Complete the Ranger School Course in the John F. Kennedy Special Warfare Center and School",
+      ],
+    },
+    {
+      name: "Army Instructor Identification Badge",
+      image: "images/awards/AIIB.png",
+      description:
+        "The Army Instructor Identification Badge (AIIB) is an identification badge that recognizes specific instructors within all commands and divisions. Arguably, instructors make up a vital portion of this army, which for such, have been given an identification badge to display their contributions and efforts into pursuing the army forwards",
+      requirements: [
+        "Complete the Army Instructor Course in the Recruiting and Retention College",
+        "This badge is only available to the 10th Special Forces Group",
+      ],
+    },
+    {
+      name: "Army Master Instructor Identification Badge",
+      image: "images/awards/MAIB.png",
+      description:
+        "The Army Instructor Identification Badge (AIIB) is an identification badge that recognizes specific instructors within all commands and divisions. Arguably, instructors make up a vital portion of this army, which for such, have been given an identification badge to display their contributions and efforts into pursuing the army forwards",
+      requirements: [
+        "Complete the Army Master Instructor Course in the Recruiting and Retention College",
+        "This badge is only available to the 10th Special Forces Group",
+      ],
+    },
+    {
+      name: "Jungle Tab",
+      image: "images/awards/JTab.png",
+      description:
+        "The U.S. Army Jungle Tab is a qualification tab authorized upon completion of the U.S. Army Jungle Operations Training Course by a member of the U.S. Military",
+      requirements: [
+        "Complete the Jungle Tab Course in the 1st Infantry Division",
+      ],
+    },
+    {
+      name: "Driver-W Clasp",
+      image: "images/awards/Driver.png",
+      description:
+        "The Driver and Mechanic Badge is a military special skill badge of the United States Army which was first created in July of 1942. The badge is issued to drivers, mechanics, and special equipment operators to denote the attainment of a high degree of skill in the operation and maintenance of motor vehicles. The badge is strictly limited for Enlisted service members only. The Driver and Mechanic Badge offers 5 claps: Driver - M (for motorcycles), Driver - T (for tracked vehicles), Driver - W (for wheeled vehicles), Mechanic (for automotive or allied vehicles), Operator - S (for special mechanical equipment). Soldiers who obtained the Driver and Mechanic Badge may wear a maximum of 3 clasps at any given time",
+      requirements: [
+        "Complete the Mechanic and Driver-W Course in the 1st Cavarly Division",
+      ],
+    },
+    {
+      name: "Army Parachutist Badge",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/4/46/US_Military_Basic_Military_Parachutist_Badge.png",
+      description:
+        "The United States Army Parachutist badge is awarded to all military personnel of any service who completed the U.S. Army Airborne Schools. It signifies that the soldier is a trained military parachutist, and is qualified to participate in airborne operations.",
+      requirements: [
+        "Complete the Special Forces Qualification Course and serve for 2 consecutive weeks",
+      ],
+    },
+    {
+      name: "Army Air Assault Badge",
+      image: "images/awards/AAB.png",
+      description:
+        "The United States Army Air Assault Badge is awarded by the U.S. Army for successful completion of the Air Assault School",
+      requirements: [
+        "Complete the Air Assault Course in the 101st Airborne Division",
+      ],
+    },
+    {
+      name: "Combat Medical Badge",
+      image: "images/awards/CMB.png",
+      description:
+        "The Combat Medical Badge (CMB) is an award of the United States Army. Any member of the Army Medical department who is assigned or attached to a ground combat arms unit of brigade or smaller size which provides medical support during any period in which the unit was engaged in ground combat is eligible for the CMB",
+      requirements: [
+        "Be a medical operator satisfactorily performing medical duties",
+        "Assigned to a medical unit during such time as the unit is engaged in active ground combat",
+        "Actively participate in such ground combat. Combat against another group acknowledged by QMC and approved by both Command and Army Staff",
+        "This badge is only available to the 5th Special Forces Group",
+      ],
+    },
+    {
+      name: "Expert Field Medical Badge",
+      image: "images/awards/EFMB.png",
+      description:
+        "The Expert Field Medical Badge (EFMB)  is a United States Army special skills badge first created on 18th of June 1965. This badge is the non-combat equivalent of the Combat Medical Badge (CMB) and is issued to U.S. military personnel who successfully complete a set of qualification tests, including both written and performance portions",
+      requirements: [
+        "Complete the Expert Field Medical Badge Course in the John F. Kennedy Special Warfare Center and School",
+        "This badge is only available to the 5th Special Forces Group",
+      ],
+    },
+    {
+      name: "ASF Combat Service Identification Badge",
+      image: "images/awards/CSIB.png",
+      description:
+        "Combat Service Identification Badges, also known as deployment patches, are badges used to identify soldiers who've been deployed into a combat area/mission while serving in a unit",
+      requirements: [
+        "Attend a deployment against a foreign enemy. The soldier cannot earn the same deployment patch multiple times versus the same group",
+      ],
+    },
+    {
+      name: "Special Forces Tab",
+      image: "images/awards/SFTab.png",
+      description:
+        "The Special Forces Tab is a service school qualification tab of the United States Army, awarded to any soldier completing the Special Forces Qualification Course",
+      requirements: [
+        "Complete the Special Forces Qualification Course in the Army Special Forces",
+      ],
+    },
+    {
+      name: "Arctic Tab",
+      image: "images/awards/ATab.png",
+      description:
+        "The U.S. Army Arctic Tab is a qualification tab authorized upon completion of the U.S. Army Cold Weather Leaders Course by a member of the U.S. Military",
+      requirements: [
+        "Complete the Cold Weather Leaders Course in the Army Special Forces",
+      ],
+    },
+    {
+      name: "Antarctica Service Medal",
+      image: "images/awards/Antarctica.png",
+      description:
+        "Awarded to a person who has completed an Antarctica expedition without death",
+      requirements: [
+        "Attend a deployment to Antarctica and complete it without death",
+      ],
+    },
+    {
+      name: "Armed Forces Expeditionary Medal",
+      image: "images/awards/AFExp.png",
+      description:
+        "Awarded to an individual when deployed against a foreign enemy. Added to uniforms automatically on the basis of having a Combat Action Badge or Combat Infantryman Badge adorned onto your uniform",
+      requirements: [
+        "Obtain the Combat Action Badge or the Combat Infantryman Badge",
+      ],
+    },
+    {
+      name: "Global War on Terrorism Expeditionary Medal",
+      image: "images/awards/GWTE.png",
+      description:
+        "Awarded to an individual when deployed against a foreign enemy",
+      requirements: ["Attend a deployment against a foreign enemy"],
+    },
+    {
+      name: "Armed Forces Service Medal",
+      image: "images/awards/AFS.png",
+      description:
+        "Awarded for completing an expedition without dying in an expedition zone that does not have tis own unique expeditionary medal",
+      requirements: ["Attend a deployment to Mt. Everest"],
+    },
+    {
+      name: "Army Overseas Service Ribbon",
+      image: "images/awards/AOS.png",
+      description:
+        "Awarded to an individual when deployed against a foreign enemy",
+      requirements: ["Attend a deployment against a foreign enemy"],
+    },
+    {
+      name: "Joint Service Achievement",
+      image: "images/awards/JSA.png",
+      description:
+        "The Joint Service Achievement ribbon is an award available to soldiers who have participated in a total of fifteen joint events (deployments + other types of joints in total) supported by Army Foreign Affairs. Past events will not count, only events after 9/10/2023 will count",
+      requirements: [
+        "Attend a joint event with an ally or against a foreign enemy",
+      ],
+    },
+  ],
+};
 
 export const NotFoundConfig = {};
 
@@ -513,17 +918,27 @@ export const FooterConfig = {
     motto: "Excellence • Honor • Courage",
     pulseDot: true,
   },
+};
 
-  styles: {
-    footerGradient: "professional-gradient",
-    border: "border-t border-asf-accent/20",
-    sectionSpacing: "py-16",
-    grid: "grid md:grid-cols-4 gap-12 mb-12 items-start",
-    heading: "font-rajdhani font-black text-xl mb-6 text-asf-accent",
-    headingUnderline: "w-12 h-1 bg-asf-accent mb-4",
-    link: "text-asf-gray-light hover:text-asf-accent transition-all duration-300 text-sm font-medium group flex items-center",
-    linkBullet:
-      "w-2 h-2 bg-asf-gray-dark rounded-full mr-3 group-hover:bg-asf-accent transition-colors duration-300",
+export const NavigationConfig = {
+  logo: {
+    src: "images/logos/Badge.png",
+    alt: "ASF Logo",
+    title: "ARMY SPECIAL FORCES",
+    subtitle: "De Oppresso Liber",
+  },
+  navItems: [
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About Us" },
+    { href: "/recruitment", label: "Recruitment" },
+    { href: "/courses", label: "Courses" },
+    { href: "/propaganda", label: "Propaganda" },
+    { href: "/contact", label: "Contact" },
+  ],
+  ctaButton: {
+    href: "/recruitment",
+    label: "JOIN NOW",
+    primary: true,
   },
 };
 
@@ -539,7 +954,6 @@ export const PropagandaConfig = {
   stats: [
     { label: "Image Assets", icon: Image, valueKey: "galleryImages" },
     { label: "Video Assets", icon: Play, valueKey: "videos" },
-    { label: "Major Victories", icon: Award, value: "Classified" },
   ],
 
   missionHighlights: [
@@ -618,25 +1032,29 @@ export const PropagandaConfig = {
         username: "MichaelMightBite",
         robloxId: 1242059834,
         expanded: false,
-        description: "was a highly respected commander of ASF. He was a good leader who interacted regularly with members and listened to them and acted on their advice and problems wisely. Following his leadership, ASF was kept on its feet without dissolving and it was also well organized. ",
+        description:
+          "was a highly respected commander of ASF. He was a good leader who interacted regularly with members and listened to them and acted on their advice and problems wisely. Following his leadership, ASF was kept on its feet without dissolving and it was also well organized. ",
       },
       {
         username: "Tvctical",
         robloxId: 88803732,
         expanded: false,
-        description: "was one of the best Sergeant Majors of ASF. Renowned to be a leader and a person people trust in terms of reliability, he accomplished duties quite fast and efficiently, thus reaching his rapid rise in terms of promotion. Being ASOC HICOM, he did an amazing job at making ASOC alive by constantly organizing events as well as significant changes to keep the community entertained. He further made the group very stable and safe to follow his leadership. ",
+        description:
+          "was one of the best Sergeant Majors of ASF. Renowned to be a leader and a person people trust in terms of reliability, he accomplished duties quite fast and efficiently, thus reaching his rapid rise in terms of promotion. Being ASOC HICOM, he did an amazing job at making ASOC alive by constantly organizing events as well as significant changes to keep the community entertained. He further made the group very stable and safe to follow his leadership. ",
       },
       {
         username: "xRed_v",
         robloxId: 772617327,
         expanded: false,
-        description: "was known among the best Sergeant Majors of ASF. He was a good listener, leader who held high attention and was able to act appropriately no matter the consequences. His learning and qualities as an officer were excellent, as in many cases he renewed groups that were low activity and got them to peak. He came up with new things all the time to improve ASF, and truly cared his low ranks. ",
+        description:
+          "was known among the best Sergeant Majors of ASF. He was a good listener, leader who held high attention and was able to act appropriately no matter the consequences. His learning and qualities as an officer were excellent, as in many cases he renewed groups that were low activity and got them to peak. He came up with new things all the time to improve ASF, and truly cared his low ranks. ",
       },
       {
         username: "NasDaily_Alpha",
         robloxId: 553357381,
         expanded: false,
-        description: "was considered as the one of the best Commanders of ASF. He was an excellent leader in that the group was organized, active and stable. His leadership and motivation skills made a legacy and during his tenure. ",
+        description:
+          "was considered as the one of the best Commanders of ASF. He was an excellent leader in that the group was organized, active and stable. His leadership and motivation skills made a legacy and during his tenure. ",
       },
     ],
   },
@@ -650,8 +1068,8 @@ export const RecruitmentConfig = {
       "Thinking about joining? Here's what you need to know to become part of the Army Special Forces.",
     backgroundImage: "images/propaganda/image11.png",
     readySection: {
-      title: "READY TO SERVE?",
-      subtitle: "Begin your journey to becoming an elite warrior",
+      title: "YOUR JOURNEY STARTS HERE",
+      subtitle: "Show true dedication and become an elite warrior",
       motto: "DE OPPRESSO LIBER",
     },
   },
@@ -683,7 +1101,7 @@ export const RecruitmentConfig = {
     {
       step: "1",
       title: "Selection/Application Process",
-      text: "Attend an ASF (group-restricted) selection event or apply through applications in the #open-positions forum within the USAR community server.",
+      text: "Attend an ASF (group-restricted) selection or apply through applications in the #open-positions forum within the USAR community server.",
     },
     {
       step: "2",
@@ -699,14 +1117,14 @@ export const RecruitmentConfig = {
 
   faqs: [
     {
-      question: "How do I join ASF?",
-      answer:
-        "You can join by attending a group-restricted selection event or applying through the #open-positions forum in the USAR community server. Once accepted, you'll enter SFQC training.",
-    },
-    {
       question: "How long does SFQC take?",
       answer:
-        "The Special Forces Qualification Course is divided into 5 phases. You are required to complete the pipeline under a week. Failure to do so, without notice, will result in a removal from the course.",
+        "The Special Forces Qualification Course is divided into 3 phases for each group. You are required to complete the pipeline under a week. Failure to do so, without notice, will result in a removal from the course.",
+    },
+    {
+      question: "Is SFQC hard?",
+      answer:
+        "As long as you follow simple instructions and have a decent level of combat skill, you will pass it with flying colors.",
     },
     {
       question: "Do I need prior experience?",
@@ -714,9 +1132,24 @@ export const RecruitmentConfig = {
         "Prior MILSIM or combat experience is required. While ASF will train you from the ground up through SFQC, you will be evaluated on combat multiple times. Dedication and discipline are expected.",
     },
     {
+      question: "What are the reasons to be removed from SFQC?",
+      answer:
+        "1. Failing one of the courses\n2. Failing to complete the course within 7 days after passing a selection/application.\n3. Caught cheating in one of the courses, resulting in a blacklist.\n4. Begging or direct messaging any staff to host a course.",
+    },
+    {
+      question: "Can I attempt to join ASF while being in another unit?",
+      answer:
+        "If you are in a unit, you are able to attend any ASF selections or apply through applications and pass them, however, you must discharge once you graduate in SFQC.",
+    },
+    {
+      question: "What if I don't have time to complete SFQC?",
+      answer:
+        "If you are in SFQC and you don't have time to complete it, you can contact any available Company Staff for an extension (Leave of Absence) or for a formal removal from the course.",
+    },
+    {
       question: "What does each phase in SFQC have?",
       answer:
-        "It depends on the group you're joining. For 1st SFG, it has a Combat Evaluation, Raid Grounds Evaluation and a Classroom Session phase. For 5th SFG, it has a CQB Assessment, Land Navigation and Roles and Tactics phase. Lastly, for 10th SFG, it has a Combat Evaluation, Map Introduction and a Classroom Session phase. The last two phases are universal for all groups, which includes an Airborne Qualification and a Practice Inspection phase.",
+        "It depends on the group you're joining.\n1st SFG:\n- Course I: Tournament Grounds Combat Evaluation\n- Course II: Classroom, Airborne Assessment, and Practice Inspection\n5th SFG:\n- Course I: Breach Assessment and Marksmanship Test\n- Course II: Land Navigation, Recon and Compound Clearance\n- Course III: Classroom, Airborne Assessment, and Practice Inspection\n10th SFG:\n- Course I: Tournament Grounds Combat Evaluation\n- Course II: Map Introduction and Quiz\n- Course III: Classroom, Airborne Assessment, and Practice Inspection",
     },
   ],
 };
@@ -727,6 +1160,8 @@ export default {
   CoursesConfig,
   HomeConfig,
   NotFoundConfig,
+  FooterConfig,
+  NavigationConfig,
   PropagandaConfig,
   RecruitmentConfig,
 };

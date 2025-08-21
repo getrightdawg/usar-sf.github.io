@@ -4,15 +4,18 @@ import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 import { Modal } from "@/components/ui/modal";
+import { HomeConfig } from "../../../config/index";
 
 export default function Home() {
-  const heroParticles = Array.from({ length: 25 }).map((_, i) => ({
+  const heroParticles = Array.from({
+    length: HomeConfig.hero.particles.amount,
+  }).map((_, i) => ({
     id: i,
     top: `${Math.random() * 100}%`,
     left: `${Math.random() * 100}%`,
-    delay: Math.random() * 4,
-    driftX: (Math.random() - 0.5) * 20,
-    bobY: 15 + Math.random() * 10,
+    delay: Math.random() * HomeConfig.hero.particles.delay,
+    driftX: (Math.random() - 0.5) * HomeConfig.hero.particles.driftX,
+    bobY: 15 + Math.random() * HomeConfig.hero.particles.driftY,
   }));
 
   function Counter({
@@ -38,7 +41,7 @@ export default function Home() {
         if (!startTime) startTime = timestamp;
         const progress = Math.min(
           (timestamp - startTime) / (duration * 1000),
-          1,
+          1
         );
         setCount(Math.floor(progress * end));
         if (progress < 1) {
@@ -61,11 +64,7 @@ export default function Home() {
     );
   }
 
-  const stats = [
-    { value: 100, label: "Active Personnel", suffix: "+" },
-    { value: 80, label: "Deployments/Operations Hosted", suffix: "+" },
-    { value: 98, label: "Success Rate", suffix: "%" },
-  ];
+  const stats = HomeConfig.stats;
   const statsRef = useRef<HTMLElement>(null);
   const [startCounting, setStartCounting] = useState(false);
 
@@ -77,7 +76,7 @@ export default function Home() {
           observer.disconnect();
         }
       },
-      { threshold: 0.3 },
+      { threshold: 0.3 }
     );
 
     if (statsRef.current) observer.observe(statsRef.current);
@@ -94,12 +93,6 @@ export default function Home() {
       awards?: string;
       objective?: string;
       rules?: string[];
-    };
-    activeInfo: {
-      title: string;
-      location?: string;
-      status: string;
-      statusColor: string;
     };
   }
 
@@ -125,6 +118,62 @@ export default function Home() {
         strokeWidth="2"
         fill="currentColor"
         fillOpacity="0.2"
+      />
+      <circle cx="24" cy="24" r="2" fill="currentColor" />
+    </svg>
+  );
+
+  const WargamesIcon = () => (
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
+      fill="none"
+      className="text-sf-gray"
+    >
+      <circle cx="14" cy="14" r="4" stroke="currentColor" strokeWidth="2" />
+      <circle cx="34" cy="34" r="4" stroke="currentColor" strokeWidth="2" />
+      <path
+        d="M18 18L30 30"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        markerEnd="url(#arrowhead)"
+      />
+      <defs>
+        <marker
+          id="arrowhead"
+          markerWidth="6"
+          markerHeight="6"
+          refX="5"
+          refY="3"
+          orient="auto"
+        >
+          <path d="M0 0L6 3L0 6V0Z" fill="currentColor" />
+        </marker>
+      </defs>
+    </svg>
+  );
+
+  const ScrimmagesIcon = () => (
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
+      fill="none"
+      className="text-sf-gray"
+    >
+      <path
+        d="M10 24H22L18 20M22 24L18 28"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+      <path
+        d="M38 24H26L30 20M26 24L30 28"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <circle cx="24" cy="24" r="2" fill="currentColor" />
     </svg>
@@ -215,86 +264,48 @@ export default function Home() {
     </svg>
   );
 
-  const events = [
-    {
-      id: "deployments",
-      title: "DEPLOYMENTS",
-      description:
-        "Large-scale operations/wargames with award recognition for outstanding performance.",
-      icon: DeploymentIcon,
-      action: "Click to view more →",
-    },
-    {
-      id: "mock-operations",
-      title: "MOCK OPERATIONS",
-      description:
-        "Advanced combat scenarios and tactical exercises. Developing elite-level combat proficiency and team coordination.",
-      icon: OperationsIcon,
-      action: "Click to view more →",
-    },
-    {
-      id: "joint-events",
-      title: "JOINT EVENTS",
-      description:
-        "Events hosted with other USAR units or allies to the USAR with award recognition.",
-      icon: JointExerciseIcon,
-      action: "Click to view more →",
-    },
-  ];
+  const BreachingIcon = () => (
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
+      fill="none"
+      className="text-sf-gray"
+    >
+      <rect
+        x="14"
+        y="8"
+        width="20"
+        height="32"
+        stroke="currentColor"
+        strokeWidth="2"
+        fill="none"
+      />
+      <path
+        d="M24 8 L26 16 L22 24 L26 32 L24 40"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        fill="none"
+      />
+      <circle cx="24" cy="40" r="2" fill="currentColor" />
+    </svg>
+  );
 
-  const eventDetails: Record<string, EventDetail> = {
-    deployments: {
-      title: "DEPLOYMENTS",
-      description:
-        "Major operational deployments that test unit cohesion and tactical proficiency in extended mission scenarios.",
-      mechanics: {
-        duration: "1+ hour(s)",
-        participants: "All Special Forces personnel unless restricted",
-        objective:
-          "Within these events, the objective is to typically eliminate the enemy team. Rules are providied within the events by the host.",
-      },
-      activeInfo: {
-        title: "Template Operation/Deployment",
-        location: "Location/Game of the Operation/Deployment",
-        status: "Active/Inactive/Scheduled",
-        statusColor: "text-green-400",
-      },
-    },
-    "mock-operations": {
-      title: "MOCK OPERATIONS",
-      description:
-        "Advanced combat scenarios and tactical exercises. Developing elite-level combat proficiency and team coordination.",
-      mechanics: {
-        duration: "1+ hour(s)",
-        participants: "All Special Forces personnel unless restricted",
-        objective:
-          "Provided by the host(s) of the Mock Operation. Can be Capture or Kill, Hostage Rescue, etc.",
-      },
-      activeInfo: {
-        title: "Template Mock Operation",
-        location: "Location/Game of the Mock Operation",
-        status: "Active/Inactive/Scheduled",
-        statusColor: "text-yellow-400",
-      },
-    },
-    "joint-events": {
-      title: "JOINT EVENTS",
-      description:
-        "Events hosted with other USAR units or allies to the USAR with award recognition.",
-      mechanics: {
-        duration: "1+ hour(s)",
-        participants:
-          "All Special Forces personnel unless restricted & USAR units or allied groups.",
-        objective: "Depends on the type of Joint Event.",
-      },
-      activeInfo: {
-        title: "Template Joint Event",
-        location: "Location/Game of the Joint Event",
-        status: "Active/Inactive/Scheduled",
-        statusColor: "text-red-400",
-      },
-    },
+  const iconsMap = {
+    deployments: DeploymentIcon,
+    "mock-operations": OperationsIcon,
+    "joint-events": JointExerciseIcon,
+    "breach-trainings": BreachingIcon,
+    wargames: WargamesIcon,
+    scrimmages: ScrimmagesIcon
   };
+  const events = HomeConfig.events.map((event) => ({
+    ...event,
+    icon: iconsMap[event.id],
+  }));
+
+  const eventDetails: Record<string, EventDetail> = HomeConfig.eventDetails;
 
   const handleEventClick = (eventId: string) =>
     setSelectedEvent(eventDetails[eventId]);
@@ -304,234 +315,15 @@ export default function Home() {
     description: string;
     requirements: string[];
   } | null>(null);
-  const awards = [
-    {
-      name: "Combat Infantryman Badge",
-      image: "images/awards/CIB.png",
-      description:
-        "The Combat Infantryman Badge (CIB) is a United States Army military decoration. The badge is issued to infantrymen who fought in active ground combat while assigned as members of an infantry unit",
-      requirements: [
-        "Be an infantryman satisfactorily performing infantry duties;",
-        "Assigned to an infantry unit during such time as the unit is engaged in active ground combat;",
-        "Actively participate in such ground combat. Combat against another group acknowledged by QMC and approved by both Command and Army Staff",
-      ],
-    },
-    {
-      name: "Marksmanship Badges",
-      image: "images/awards/Marksmanship.png",
-      description:
-        "The Marksmanship Badges are U.S. military badges or civilian badges which are awarded to personnel upon successful completion of a weapons qualification course (known as marksmanship qualification badges). This badge can be earned by passing the marksmanship course. Based on your score you will receive a different title. Expert Marksmanship - achieved higher grades in a marksmanship course. Sharpshooter - achieved satisfactory grades in a marksmanship course. Marksman - completed marksmanship course with no other achievements",
-      requirements: [
-        "Complete the Marksmanship Qualification Course in the John F. Kennedy Special Warfare Center and School",
-        "Achieve a qualifying score or higher",
-      ],
-    },
-    {
-      name: "Expert Infantryman Badge",
-      image: "images/awards/EIB.png",
-      description:
-        "The Expert Infantryman Badge (EIB) is a special skills badge of the United States Army. The Combat Infantryman’s Badge (CIB) is issued to infantrymen for participation in ground combat while the EIB is presented for completion of a course of testing designed to demonstrate proficiency in infantry skills. Currently, the Expert Infantryman Badge is awarded to U.S. Army personnel who hold infantry or special forces military occupational specialties with the exception of soldiers with occupational specialty of Special Forces. To be eligible for EIB, the soldier must complete a number of prerequisites and pass a battery of graded tests on basic infantry skills",
-      requirements: [
-        "Complete the Expert Infantryman Badge Qualification Course in the John F. Kennedy Special Warfare Center and School",
-      ],
-    },
-    {
-      name: "Army Pathfinder Badge",
-      image: "images/awards/PFB.png",
-      description:
-        "The Pathfinder Badge is a military badge of the United States Army awarded to soldiers who complete the Pathfinder course in ASOC",
-      requirements: [
-        "Complete the Pathfinder Badge Course in the John F. Kennedy Special Warfare Center and School",
-      ],
-    },
-    {
-      name: "Military Freefall Badge",
-      image: "images/awards/MFFB.png",
-      description:
-        "Complete a Military Freefall course recognized by QMC and Army Staff and serve for 6 consecutive months, earning the title of Jumpmaster",
-      requirements: [
-        "Complete the Military Freefall Course in the John F. Kennedy Special Warfare Center and School",
-      ],
-    },
-    {
-      name: "Special Operations Diver Badge",
-      image: "images/awards/Diver.png",
-      description:
-        "The Special Operations Diver Badge is a military badge awarded by the U.S. Army for the successful completion of the Combat Diver Qualification Course, signifying that the soldier is qualified to conduct Special Forces Underwater Operations",
-      requirements: [
-        "Complete the Combat Diver Qualification Course in the John F. Kennedy Special Warfare Center and School",
-      ],
-    },
-    {
-      name: "Ranger Tab",
-      image: "images/awards/RTab.png",
-      description:
-        "The U.S. Army Ranger Tab is a qualification tab authorized upon completion of the U.S. Army Ranger School by a member of the U.S. Military",
-      requirements: [
-        "Complete the Ranger School Course in the John F. Kennedy Special Warfare Center and School",
-      ],
-    },
-    {
-      name: "Army Instructor Identification Badge",
-      image: "images/awards/AIIB.png",
-      description:
-        "The Army Instructor Identification Badge (AIIB) is an identification badge that recognizes specific instructors within all commands and divisions. Arguably, instructors make up a vital portion of this army, which for such, have been given an identification badge to display their contributions and efforts into pursuing the army forwards",
-      requirements: [
-        "Complete the Army Instructor Course in the Recruiting and Retention College",
-        "This badge is only available to the 10th Special Forces Group",
-      ],
-    },
-    {
-      name: "Army Master Instructor Identification Badge",
-      image: "images/awards/MAIB.png",
-      description:
-        "The Army Instructor Identification Badge (AIIB) is an identification badge that recognizes specific instructors within all commands and divisions. Arguably, instructors make up a vital portion of this army, which for such, have been given an identification badge to display their contributions and efforts into pursuing the army forwards",
-      requirements: [
-        "Complete the Army Master Instructor Course in the Recruiting and Retention College",
-        "This badge is only available to the 10th Special Forces Group",
-      ],
-    },
-    {
-      name: "Jungle Tab",
-      image: "images/awards/JTab.png",
-      description:
-        "The U.S. Army Jungle Tab is a qualification tab authorized upon completion of the U.S. Army Jungle Operations Training Course by a member of the U.S. Military",
-      requirements: [
-        "Complete the Jungle Tab Course in the 1st Infantry Division",
-      ],
-    },
-    {
-      name: "Driver-W Clasp",
-      image: "images/awards/Driver.png",
-      description:
-        "The Driver and Mechanic Badge is a military special skill badge of the United States Army which was first created in July of 1942. The badge is issued to drivers, mechanics, and special equipment operators to denote the attainment of a high degree of skill in the operation and maintenance of motor vehicles. The badge is strictly limited for Enlisted service members only. The Driver and Mechanic Badge offers 5 claps: Driver - M (for motorcycles), Driver - T (for tracked vehicles), Driver - W (for wheeled vehicles), Mechanic (for automotive or allied vehicles), Operator - S (for special mechanical equipment). Soldiers who obtained the Driver and Mechanic Badge may wear a maximum of 3 clasps at any given time",
-      requirements: [
-        "Complete the Mechanic and Driver-W Course in the 1st Cavarly Division",
-      ],
-    },
-    {
-      name: "Army Parachutist Badge",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/4/46/US_Military_Basic_Military_Parachutist_Badge.png",
-      description:
-        "The United States Army Parachutist badge is awarded to all military personnel of any service who completed the U.S. Army Airborne Schools. It signifies that the soldier is a trained military parachutist, and is qualified to participate in airborne operations.",
-      requirements: [
-        "Complete the Special Forces Qualification Course and serve for 2 consecutive weeks",
-      ],
-    },
-    {
-      name: "Army Air Assault Badge",
-      image: "images/awards/AAB.png",
-      description:
-        "The United States Army Air Assault Badge is awarded by the U.S. Army for successful completion of the Air Assault School",
-      requirements: [
-        "Complete the Air Assault Course in the 101st Airborne Division",
-      ],
-    },
-    {
-      name: "Combat Medical Badge",
-      image: "images/awards/CMB.png",
-      description:
-        "The Combat Medical Badge (CMB) is an award of the United States Army. Any member of the Army Medical department who is assigned or attached to a ground combat arms unit of brigade or smaller size which provides medical support during any period in which the unit was engaged in ground combat is eligible for the CMB",
-      requirements: [
-        "Be a medical operator satisfactorily performing medical duties",
-        "Assigned to a medical unit during such time as the unit is engaged in active ground combat",
-        "Actively participate in such ground combat. Combat against another group acknowledged by QMC and approved by both Command and Army Staff",
-        "This badge is only available to the 5th Special Forces Group",
-      ],
-    },
-    {
-      name: "Expert Field Medical Badge",
-      image: "images/awards/EFMB.png",
-      description:
-        "The Expert Field Medical Badge (EFMB)  is a United States Army special skills badge first created on 18th of June 1965. This badge is the non-combat equivalent of the Combat Medical Badge (CMB) and is issued to U.S. military personnel who successfully complete a set of qualification tests, including both written and performance portions",
-      requirements: [
-        "Complete the Expert Field Medical Badge Course in the John F. Kennedy Special Warfare Center and School",
-        "This badge is only available to the 5th Special Forces Group",
-      ],
-    },
-    {
-      name: "ASF Combat Service Identification Badge",
-      image: "images/awards/CSIB.png",
-      description:
-        "Combat Service Identification Badges, also known as deployment patches, are badges used to identify soldiers who've been deployed into a combat area/mission while serving in a unit",
-      requirements: [
-        "Attend a deployment against a foreign enemy. The soldier cannot earn the same deployment patch multiple times versus the same group",
-      ],
-    },
-    {
-      name: "Special Forces Tab",
-      image: "images/awards/SFTab.png",
-      description:
-        "The Special Forces Tab is a service school qualification tab of the United States Army, awarded to any soldier completing the Special Forces Qualification Course",
-      requirements: [
-        "Complete the Special Forces Qualification Course in the Army Special Forces",
-      ],
-    },
-    {
-      name: "Arctic Tab",
-      image: "images/awards/ATab.png",
-      description:
-        "The U.S. Army Arctic Tab is a qualification tab authorized upon completion of the U.S. Army Cold Weather Leaders Course by a member of the U.S. Military",
-      requirements: [
-        "Complete the Cold Weather Leaders Course in the Army Special Forces",
-      ],
-    },
-    {
-      name: "Antarctica Service Medal",
-      image: "images/awards/Antarctica.png",
-      description:
-        "Awarded to a person who has completed an Antarctica expedition without death",
-      requirements: [
-        "Attend a deployment to Antarctica and complete it without death",
-      ],
-    },
-    {
-      name: "Armed Forces Expeditionary Medal",
-      image: "images/awards/AFExp.png",
-      description:
-        "Awarded to an individual when deployed against a foreign enemy. Added to uniforms automatically on the basis of having a Combat Action Badge or Combat Infantryman Badge adorned onto your uniform",
-      requirements: [
-        "Obtain the Combat Action Badge or the Combat Infantryman Badge",
-      ],
-    },
-    {
-      name: "Global War on Terrorism Expeditionary Medal",
-      image: "images/awards/GWTE.png",
-      description:
-        "Awarded to an individual when deployed against a foreign enemy",
-      requirements: ["Attend a deployment against a foreign enemy"],
-    },
-    {
-      name: "Armed Forces Service Medal",
-      image: "images/awards/AFS.png",
-      description:
-        "Awarded for completing an expedition without dying in an expedition zone that does not have tis own unique expeditionary medal",
-      requirements: ["Attend a deployment to Mt. Everest"],
-    },
-    {
-      name: "Army Overseas Service Ribbon",
-      image: "images/awards/AOS.png",
-      description:
-        "Awarded to an individual when deployed against a foreign enemy",
-      requirements: ["Attend a deployment against a foreign enemy"],
-    },
-    {
-      name: "Joint Service Achievement",
-      image: "images/awards/JSA.png",
-      description:
-        "The Joint Service Achievement ribbon is an award available to soldiers who have participated in a total of fifteen joint events (deployments + other types of joints in total) supported by Army Foreign Affairs. Past events will not count, only events after 9/10/2023 will count",
-      requirements: [
-        "Attend a joint event with an ally or against a foreign enemy",
-      ],
-    },
-  ];
+
+  const awards = HomeConfig.awards;
+
   return (
     <div className="pt-20">
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
         <motion.div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('images/propaganda/image6.png')" }}
+          style={{ backgroundImage: `url(${HomeConfig.hero.backgroundImage})` }}
           initial={{ opacity: 0, scale: 1.1 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
@@ -571,12 +363,12 @@ export default function Home() {
               transition={{ duration: 1, delay: 0.2 }}
             >
               <span className="relative">
-                ARMY
+                {HomeConfig.hero.title.line1}
                 <div className="absolute -bottom-2 left-0 w-full h-1 bg-asf-accent transform scale-x-0 animate-pulse"></div>
               </span>
               <br />
               <span className="text-asf-gray-light relative">
-                SPECIAL FORCES
+                {HomeConfig.hero.title.line2}
                 <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-asf-accent to-transparent"></div>
               </span>
             </motion.h1>
@@ -588,10 +380,10 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               <p className="text-2xl md:text-3xl font-rajdhani font-bold text-asf-accent mb-2">
-                De Oppresso Liber
+                {HomeConfig.hero.motto.latin}
               </p>
               <p className="text-lg md:text-xl text-asf-gray-light max-w-2xl mx-auto">
-                To Free the Oppressed
+                {HomeConfig.hero.motto.english}
               </p>
             </motion.div>
 
@@ -601,23 +393,20 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <Link href="/recruitment">
-                <Button
-                  size="lg"
-                  className="glow-border bg-asf-accent text-asf-black px-10 py-5 font-rajdhani font-black text-lg hover:bg-asf-accent-dark hover:scale-105 transition-all duration-300 shadow-lg"
-                >
-                  JOIN THE ELITE
-                </Button>
-              </Link>
-              <Link href="/about">
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-2 border-white px-10 py-5 font-rajdhani font-bold text-lg hover:bg-white hover:text-asf-black hover:scale-105 transition-all duration-300"
-                >
-                  LEARN MORE
-                </Button>
-              </Link>
+              {HomeConfig.hero.ctaButtons.map((cta, index) => (
+                <Link key={index} href={cta.link}>
+                  <Button
+                    size="lg"
+                    className={
+                      cta.primary
+                        ? "glow-border bg-asf-accent text-asf-black px-10 py-5 font-rajdhani font-black text-lg hover:bg-asf-accent-dark hover:scale-105 transition-all duration-300 shadow-lg"
+                        : "border-2 border-white px-10 py-5 font-rajdhani font-bold text-lg hover:bg-white hover:text-asf-black hover:scale-105 transition-all duration-300"
+                    }
+                  >
+                    {cta.label}
+                  </Button>
+                </Link>
+              ))}
             </motion.div>
           </motion.div>
         </div>
@@ -628,7 +417,7 @@ export default function Home() {
           transition={{ duration: 2, repeat: Infinity }}
         >
           <p className="text-sm text-asf-gray-light mb-2 font-rajdhani">
-            SCROLL TO EXPLORE
+            {HomeConfig.hero.scrollText}
           </p>
           <ChevronDown className="w-6 h-6 text-asf-accent" />
         </motion.div>
@@ -640,27 +429,22 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-asf-accent/10 to-transparent opacity-50"></div>
             <motion.div
               className="flex whitespace-nowrap relative z-10"
-              animate={{ x: ["100%", "-100%"] }}
+              animate={{ x: ["0%", "-50%"] }}
               transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
             >
-              {[
-                "SPECIAL FORCES",
-                "ARMY SPECIAL OPERATIONS COMMAND",
-                "DE OPPRESSO LIBER",
-                "TO FREE THE OPPRESSED",
-                "THE BEST OF THE BEST",
-                "ELITE WARRIORS",
-                "UNCONVENTIONAL WARFARE",
-              ].map((text, i) => (
-                <span
-                  key={i}
-                  className="font-rajdhani font-bold text-xl mx-12 text-asf-accent"
-                >
-                  {text}
-                </span>
-              ))}
+              {[...HomeConfig.marqueeTexts, ...HomeConfig.marqueeTexts].map(
+                (text, i) => (
+                  <span
+                    key={i}
+                    className="font-rajdhani font-bold text-xl mx-12 text-asf-accent"
+                  >
+                    {text}
+                  </span>
+                )
+              )}
             </motion.div>
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
               <motion.div
