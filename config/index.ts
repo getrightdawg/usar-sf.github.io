@@ -503,14 +503,14 @@ export const HomeConfig = {
       id: "deployments",
       title: "DEPLOYMENTS",
       description:
-        "Intensive large-scale missions designed to challenge tactical skills, teamwork, and endurance.",
+        "Large-scale missions designed to challenge tactical skills, teamwork, and endurance.",
       action: "Click to view more →",
     },
     {
       id: "mock-operations",
       title: "MOCK OPERATIONS",
       description:
-        "Simulated combat exercises that push teams to practice strategies and refine coordination under realistic scenarios.",
+        "Combat exercises that push teams to practice strategies and refine coordination under realistic scenarios.",
       action: "Click to view more →",
     },
     {
@@ -531,7 +531,7 @@ export const HomeConfig = {
       id: "wargames",
       title: "WARGAMES",
       description:
-        "Full-scale simulated battles designed to test strategy, adaptability, and coordination between multiple USAR units.",
+        "Full-scale battles designed to test strategy, adaptability, and coordination between multiple USAR units.",
       action: "Click to view more →",
     },
     {
@@ -1152,7 +1152,7 @@ export const RecruitmentConfig = {
     {
       step: "3",
       title: "SFQC Training",
-      text: "After you receive your roles, you will be placed in SFQC. You will need to complete all 5 phases designed for your specified group to graduate and become a Special Forces member.",
+      text: "After you receive your roles, you will be placed in SFQC. You will need to complete all 3 phases designed for your specified group to graduate and become a Special Forces member.",
     },
   ],
 
