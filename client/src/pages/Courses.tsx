@@ -181,7 +181,7 @@ export default function Courses() {
                 </div>
                 <div className="mt-12 p-6 bg-asf-dark/70 rounded-lg border border-asf-accent/20">
                   <h5 className="text-xl font-rajdhani font-bold text-asf-accent mb-4">
-                    ARMY STAFF REVIEW
+                    COURSE REVIEWS
                   </h5>
                   <div className="flex items-center mb-3">
                     <div className="flex">
@@ -199,7 +199,7 @@ export default function Courses() {
                     "i'm never doing ts again🥀"
                   </p>
                   <p className="mt-2 text-sm text-asf-gray">
-                    — MC_T1gerTY
+                    — Vice Chief of Staff of the Army, General MC_T1gerTY.
                   </p>
                 </div>
               </div>
