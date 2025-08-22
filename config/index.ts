@@ -1027,6 +1027,10 @@ export const PropagandaConfig = {
     { src: "images/propaganda/image9.png", credit: "Credits: @lucifer712" },
     { src: "images/propaganda/image10.png", credit: "Credits: kpel1111" },
     { src: "images/propaganda/image11.png", credit: "Credits: N/A" },
+    { src: "images/propaganda/image12.png", credit: "Credits: ChenShohry1" },
+    { src: "images/propaganda/image13.png", credit: "Credits: ChenShohry1" },
+    { src: "images/propaganda/image14.png", credit: "Credits: ChenShohry1" },
+    
   ],
 
   videos: [
