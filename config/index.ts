@@ -860,50 +860,50 @@ export const HomeConfig = {
       ],
     },
     {
-    name: "Southwest Asia Service Medal",
-    image: "images/awards/SWAsia.png",
-    description:
-      "Awarded to personnel who participated in operations or deployments during the Southwest Asia Campaign.",
-    requirements: [
-      "Complete four consecutive deployments not within the same calendar week",
-    ],
-  },
-  {
-    name: "Kosovo Campaign Medal",
-    image: "images/awards/Kosovo.png",
-    description:
-      "Awarded to personnel who participated in operations or deployments during the Kosovo Campaign.",
-    requirements: [
-      "Complete three consecutive deployments not within the same calendar week",
-    ],
-  },
-  {
-    name: "Afghanistan Campaign Medal",
-    image: "images/awards/Afghanistan.png",
-    description:
-      "Awarded to personnel who participated in operations or deployments during the Afghanistan Campaign.",
-    requirements: [
-      "Complete three consecutive deployments not within the same calendar week",
-    ],
-  },
-  {
-    name: "Iraq Campaign Medal",
-    image: "images/awards/Iraq.png",
-    description:
-      "Awarded to personnel who participated in operations or deployments during the Iraq Campaign.",
-    requirements: [
-      "Complete four consecutive deployments not within the same calendar week",
-    ],
-  },
-  {
-    name: "Army Sea Duty Medal",
-    image: "images/awards/SeaDuty.png",
-    description:
-      "Awarded to personnel who participated in operations or deployments during the Army Sea Duty Campaign.",
-    requirements: [
-      "Complete three consecutive deployments not within the same calendar week",
-    ],
-  },
+      name: "Southwest Asia Service Medal",
+      image: "images/awards/SWAsia.png",
+      description:
+        "Awarded to personnel who participated in operations or deployments during the Southwest Asia Campaign.",
+      requirements: [
+        "Complete four consecutive deployments not within the same calendar week",
+      ],
+    },
+    {
+      name: "Kosovo Campaign Medal",
+      image: "images/awards/Kosovo.png",
+      description:
+        "Awarded to personnel who participated in operations or deployments during the Kosovo Campaign.",
+      requirements: [
+        "Complete three consecutive deployments not within the same calendar week",
+      ],
+    },
+    {
+      name: "Afghanistan Campaign Medal",
+      image: "images/awards/Afghanistan.png",
+      description:
+        "Awarded to personnel who participated in operations or deployments during the Afghanistan Campaign.",
+      requirements: [
+        "Complete three consecutive deployments not within the same calendar week",
+      ],
+    },
+    {
+      name: "Iraq Campaign Medal",
+      image: "images/awards/Iraq.png",
+      description:
+        "Awarded to personnel who participated in operations or deployments during the Iraq Campaign.",
+      requirements: [
+        "Complete four consecutive deployments not within the same calendar week",
+      ],
+    },
+    {
+      name: "Army Sea Duty Medal",
+      image: "images/awards/SeaDuty.png",
+      description:
+        "Awarded to personnel who participated in operations or deployments during the Army Sea Duty Campaign.",
+      requirements: [
+        "Complete three consecutive deployments not within the same calendar week",
+      ],
+    },
   ],
 };
 
@@ -1030,7 +1030,6 @@ export const PropagandaConfig = {
     { src: "images/propaganda/image12.png", credit: "Credits: ChenShohry1" },
     { src: "images/propaganda/image13.png", credit: "Credits: ChenShohry1" },
     { src: "images/propaganda/image14.png", credit: "Credits: ChenShohry1" },
-    
   ],
 
   videos: [
@@ -1078,28 +1077,35 @@ export const PropagandaConfig = {
         robloxId: 1242059834,
         expanded: false,
         description:
-          "was a highly respected commander of ASF. He was a good leader who interacted regularly with members and listened to them and acted on their advice and problems wisely. Following his leadership, ASF was kept on its feet without dissolving and it was also well organized. ",
+          "was a highly respected Commander of ASF. He was a strong leader who engaged regularly with members, listened to their feedback, and acted on it with wisdom. Under his leadership, ASF stayed on its feet without dissolving and remained well organized.",
       },
       {
         username: "Tvctical",
         robloxId: 88803732,
         expanded: false,
         description:
-          "was one of the best Sergeant Majors of ASF. Renowned to be a leader and a person people trust in terms of reliability, he accomplished duties quite fast and efficiently, thus reaching his rapid rise in terms of promotion. Being ASOC HICOM, he did an amazing job at making ASOC alive by constantly organizing events as well as significant changes to keep the community entertained. He further made the group very stable and safe to follow his leadership. ",
+          "was among the best Sergeant Majors of ASF. Renowned for his reliability and trustworthiness, he carried out duties quickly and efficiently, earning rapid promotions. As ASOC HICOM, he kept the community entertained and active by organizing events and implementing significant changes, ensuring ASF’s stability and growth.",
       },
       {
         username: "xRed_v",
         robloxId: 772617327,
         expanded: false,
         description:
-          "was known among the best Sergeant Majors of ASF. He was a good listener, leader who held high attention and was able to act appropriately no matter the consequences. His learning and qualities as an officer were excellent, as in many cases he renewed groups that were low activity and got them to peak. He came up with new things all the time to improve ASF, and truly cared his low ranks. ",
+          "was known as one of ASF’s finest Sergeant Majors. A strong leader and attentive listener, he consistently acted with fairness and composure. His leadership revived struggling groups, brought them back to peak activity, and introduced creative improvements that showed his dedication to both ASF and its members.",
       },
       {
         username: "NasDaily_Alpha",
         robloxId: 553357381,
         expanded: false,
         description:
-          "was considered as the one of the best Commanders of ASF. He was an excellent leader in that the group was organized, active and stable. His leadership and motivation skills made a legacy and during his tenure. ",
+          "was regarded as one of the greatest Commanders of ASF. His outstanding leadership skills kept the group organized, active, and stable. Through his motivation and vision, he built a legacy that left a lasting mark on ASF’s history.",
+      },
+      {
+        username: "616Mythic",
+        robloxId: 3820566083,
+        expanded: false,
+        description:
+          "has been serving in ASF since August 22, 2024, and quickly became one of its most impactful members. Recognized multiple times as Personnel of the Week, he was recently appointed as ASF’s Head Developer, creating games and maps for the community, including for the CWLC. His work earned him the prestigious Outstanding Volunteer award from Army Staff. Ever since his enlistment, he has been recognized across the ASF community for his dedication, creativity, and unwavering hard work.",
       },
     ],
   },
