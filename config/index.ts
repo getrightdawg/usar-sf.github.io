@@ -194,9 +194,9 @@ export const ContactConfig = {
         },
         {
           position: "Group Sergeant Major",
-          rank: "VACANT",
-          name: "",
-          roblox: "",
+          rank: "Sergeant Major",
+          name: "jewshoota",
+          roblox: "https://www.roblox.com/users/632121029/profile?friendshipSourceType=PlayerSearch",
         },
       ],
     },
