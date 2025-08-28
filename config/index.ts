@@ -87,9 +87,9 @@ export const AboutConfig = {
 
   dfProgram: {
     title: "DESIGNATED FIGHTER PROGRAM",
-    subtitle: "Elite program that only a few manage to get in.",
+    subtitle: "An elite program where only a few manage to get in.",
     description:
-      "The Designated Fighter Program (DFP) is a rigorous program intended to select only the best of the best. Each Designated Fighter gets access and priority to certain events such as operations and deployments. They show combat excellence above all others and are the elite of the elite.",
+      "The Designated Fighter Program (DFP) is a rigorous program intended to select only the best of the best. Each Designated Fighter gets access and priority to certain events such as operations and deployments. They show combat excellence above all others.",
     criteria: [
       "Must be an active Special Forces member",
       "Must be excellent at combat",
@@ -1030,6 +1030,8 @@ export const PropagandaConfig = {
     { src: "images/propaganda/image12.png", credit: "Credits: ChenShohry1" },
     { src: "images/propaganda/image13.png", credit: "Credits: ChenShohry1" },
     { src: "images/propaganda/image14.png", credit: "Credits: ChenShohry1" },
+    { src: "images/propaganda/image15.png", credit: "Credits: kazxrevenge" },
+    { src: "images/propaganda/image16.png", credit: "Credits: kazxrevenge" },
   ],
 
   videos: [
