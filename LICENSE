@@ -2,84 +2,62 @@ GETRIGHTDAWG PUBLIC REPO LICENSE
 Copyright (c) 2025 getr1ghtdawg. All rights reserved.
 
 1. Definitions
-   a) “Project” means this GitHub repository and all of its contents.
-   b) “Code” means the source code files in the Project (e.g., .js, .ts, .rb, .py, .lua, .json, etc.).
-   c) “Assets” means all non-code materials in the Project, including but not limited to: images, logos,
-   icons, fonts, textures, models, audio, video, screenshots, animations, copy/text content, level
-   designs, documents, and any compiled/binary outputs.
-   d) “Deployment” means making the Project or any portion of it publicly accessible via the internet
-   or any other network, whether for free or for profit.
+a) “Project” means this GitHub repository and all of its contents.
+b) “Code” means the source code files in the Project (e.g., .js, .ts, .rb, .py, .lua, .json, etc.).
+c) “Assets” means all non-code materials in the Project that are created by or owned by getr1ghtdawg, including but not limited to: logos, icons, fonts, textures, models, audio, video, screenshots, animations, copy/text content, level designs, documents, and any compiled/binary outputs.
+d) “Third-Party Content” means materials not created or owned by getr1ghtdawg but included in the Project for reference, commentary, educational, or archival purposes, with attribution to their original authors.
+e) “Deployment” means making the Project or any portion of it publicly accessible via the internet or any other network, whether for free or for profit.
 
 2. Permission to View, Clone, and Fork (Contribution-Only)
-   You are permitted to:
+You are permitted to:
+- View, clone, and fork the Project on GitHub for the sole purpose of evaluating the Project and/or submitting issues or pull requests back to this Project.
+- Run the Project locally for evaluation and development of contributions to this Project.
 
-   - View, clone, and fork the Project on GitHub for the sole purpose of evaluating the Project and/or
-     submitting issues or pull requests back to this Project.
-   - Run the Project locally for evaluation and development of contributions to this Project.
+You are NOT permitted to:
+- Redistribute, rehost, sublicense, or publish the Project or any part of it outside of GitHub without express written permission from getr1ghtdawg.
+- Use the Project (Code or Assets) in any product, service, or publication (commercial or non-commercial) without express written permission from getr1ghtdawg.
 
-   You are NOT permitted to:
+3. Assets and Third-Party Content
+3a. Third-Party Content Disclaimer
+Some images, videos, or other media in this Project are Third-Party Content and are not owned by getr1ghtdawg.
 
-   - Redistribute, rehost, sublicense, or publish the Project or any part of it outside of GitHub without
-     express written permission from getr1ghtdawg.
-   - Use the Project (Code or Assets) in any product, service, or publication (commercial or non-commercial)
-     without express written permission from getr1ghtdawg.
+Such content is included under fair use, public domain, or with attribution where applicable.
 
-3. Asset Protection (No Reproduction/No Stealing)
+getr1ghtdawg makes no claim of ownership over Third-Party Content, and all rights remain with their respective owners.
 
-   - All Assets are proprietary. Reproduction, copying, modification, extraction, scraping, or use of the
-     Assets in any context outside of this Project is strictly prohibited without prior written permission
-     from getr1ghtdawg.
-   - You may not remove, obscure, or alter copyright, watermark, or attribution notices.
+If you are a copyright holder and wish your content to be removed, please contact getr1ghtdawg.
+
+3b. Asset Protection (No Reproduction/No Stealing)
+All Assets (excluding Third-Party Content) are proprietary. Reproduction, copying, modification, extraction, scraping, or use of the Assets in any context outside of this Project is strictly prohibited without prior written permission from getr1ghtdawg.
+
+You may not remove, obscure, or alter copyright, watermark, or attribution notices.
 
 4. Code Usage
+Unless a separate license file in a specific directory or file header explicitly states otherwise, the Code is NOT licensed for reuse in other projects. Any reuse, distribution, or derivative work based on the Code requires prior written permission from getr1ghtdawg.
 
-   - Unless a separate license file in a specific directory or file header explicitly states otherwise,
-     the Code is NOT licensed for reuse in other projects. Any reuse, distribution, or derivative work
-     based on the Code requires prior written permission from getr1ghtdawg.
-   - If a subfolder or file includes its own license (e.g., MIT for a specific script), that license applies
-     only to that clearly marked component.
+If a subfolder or file includes its own license (e.g., MIT for a specific script), that license applies only to that clearly marked component.
 
 5. No Training, Datasets, or NFTs
-
-   - The Project (Code and Assets) may not be used to train, fine-tune, or evaluate machine learning or AI
-     systems, included in any dataset or data pipeline, or minted/sold as NFTs, without prior written
-     permission from getr1ghtdawg.
+The Project (Code, Assets, and Third-Party Content) may not be used to train, fine-tune, or evaluate machine learning or AI systems, included in any dataset or data pipeline, or minted/sold as NFTs, without prior written permission from getr1ghtdawg.
 
 6. Web Deployment Restriction
+Deployment of this Project (in whole or in part) to any web server, hosting service, CDN, or other platform accessible to the public is strictly prohibited without prior written permission from getr1ghtdawg.
 
-   - Deployment of this Project (in whole or in part) to any web server, hosting service, CDN, or other
-     platform accessible to the public is strictly prohibited without prior written permission from
-     getr1ghtdawg.
-   - This includes, but is not limited to, services such as GitHub Pages, Netlify, Vercel, Cloudflare Pages,
-     personal web servers, or any equivalent hosting environment.
+This includes, but is not limited to, services such as GitHub Pages, Netlify, Vercel, Cloudflare Pages, personal web servers, or any equivalent hosting environment.
 
 7. Trademarks & Branding
-
-   - Names, logos, and other branding in the Assets may not be used to suggest endorsement or affiliation
-     without written permission from getr1ghtdawg.
+Names, logos, and other branding in the Assets may not be used to suggest endorsement or affiliation without written permission from getr1ghtdawg.
 
 8. Contributions
-
-   - By submitting a contribution (e.g., a pull request), you represent that you have the right to do so,
-     and you grant getr1ghtdawg a perpetual, irrevocable, worldwide, royalty-free license to use, modify,
-     distribute, and sublicense your contribution as part of the Project.
+By submitting a contribution (e.g., a pull request), you represent that you have the right to do so, and you grant getr1ghtdawg a perpetual, irrevocable, worldwide, royalty-free license to use, modify, distribute, and sublicense your contribution as part of the Project.
 
 9. Termination
-
-   - Any breach of this license automatically terminates your rights under it. Upon termination, you must
-     cease all use of the Project and delete any local or hosted copies, except as required for reasonable
-     backup/archival purposes or by law.
+Any breach of this license automatically terminates your rights under it. Upon termination, you must cease all use of the Project and delete any local or hosted copies, except as required for reasonable backup/archival purposes or by law.
 
 10. No Warranty; Limitation of Liability
-
-- THE PROJECT IS PROVIDED “AS IS” AND “AS AVAILABLE,” WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
-  EXPRESS OR IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL GETR1GHTDAWG BE LIABLE
-  FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM OR IN CONNECTION WITH THE PROJECT OR THIS
-  LICENSE.
+THE PROJECT IS PROVIDED “AS IS” AND “AS AVAILABLE,” WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EXPRESS OR IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL GETR1GHTDAWG BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM OR IN CONNECTION WITH THE PROJECT OR THIS LICENSE.
 
 11. Permission Requests
-
-- For any use not expressly permitted by this license, you must obtain prior written permission from
-  getr1ghtdawg (e.g., via Discord).
+For any use not expressly permitted by this license, you must obtain prior written permission from getr1ghtdawg (e.g., via Discord).
 
 END OF TERMS
