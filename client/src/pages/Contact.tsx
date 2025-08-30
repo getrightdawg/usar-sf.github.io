@@ -340,7 +340,7 @@ export default function Contact() {
                   <Mail className="w-full h-full text-asf-accent" />
                 </div>
                 <h2 className="text-3xl font-rajdhani font-bold text-white">
-                  {ContactConfig.sections.readyToConnect.title}
+                  {ContactConfig.sections.readyToConnect.secondaryTitle}
                 </h2>
               </div>
               <div className="h-px bg-gradient-to-r from-asf-accent via-asf-accent/30 to-transparent mb-8"></div>

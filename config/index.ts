@@ -305,8 +305,8 @@ export const ContactConfig = {
   contactMethods: [
     {
       title: "Primary Channel",
-      description: "Discord Server - Official USAR Community",
-      note: "Use for formal communications and requests",
+      description: "Discord Server - Army Special Operations Command",
+      note: "Use for formal communications and requests by filing a ticket",
       icon: Mail,
     },
     {
@@ -326,6 +326,7 @@ export const ContactConfig = {
     },
     readyToConnect: {
       title: "READY TO CONNECT?",
+      secondaryTitle: "Get in Touch",
       subtitle: "Reach out to ASF leadership through official channels",
       motto: "DE OPPRESSO LIBER",
     },
