@@ -41,7 +41,7 @@ export const AboutConfig = {
         badgeSrc: "images/logos/10SFG.png",
         tagline: "Gatekeepers of Special Forces Quality",
         description:
-          "Handles recruitment and hosts the Special Forces Qualification Course (SFQC) alongside the Cold Weather Leaders Course (CWLC).",
+          "Handles recruitment and hosts SFQC alongside CWLC.",
         companies: [
           {
             name: "Whiskey Company: ",
@@ -355,13 +355,13 @@ export const CoursesConfig = {
       icon: Clock,
       title: "Duration",
       value: "1 Week",
-      description: "All our courses typically last a week",
+      description: "All our courses last a week",
     },
     {
       icon: Users,
       title: "Eligibility",
       value: "All USAR",
-      description: "All our course are open to all of USAR",
+      description: "All our courses are open to all of USAR",
     },
     {
       icon: Award,
