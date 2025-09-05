@@ -199,7 +199,7 @@ export default function Courses() {
                     "i'm never doing ts again🥀"
                   </p>
                   <p className="mt-2 text-sm text-asf-gray">
-                    — Vice Chief of Staff of the Army, General MC_T1gerTY.
+                    — Former Vice Chief of Staff of the Army, General MC_T1gerTY.
                   </p>
                 </div>
               </div>

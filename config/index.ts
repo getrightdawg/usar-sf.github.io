@@ -1188,7 +1188,7 @@ export const RecruitmentConfig = {
     {
       question: "What are the reasons to be removed from SFQC?",
       answer:
-        "Common reasons can be failing one of the courses, failing to complete the course within 7 days after passing a selection/application, caught cheating in one of the courses, resulting in a blacklist, and lastly begging or direct messaging any staff/instructor to host a course.",
+        "Common reasons can be failing one of the courses, failing to complete the pipeline within 7 days after passing a selection/application, caught cheating in one of the courses, resulting in a blacklist, and lastly begging or direct messaging any staff/instructor to host a course.",
     },
     {
       question: "Can I attempt to join ASF while being in another unit?",
