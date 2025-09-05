@@ -40,13 +40,7 @@
 ## 🪖 Overview
 
 This is a **full-stack web application** for the **Army Special Forces (ASF)** within Zanance's United States Army.
-It serves as the **official website** showcasing ASF’s operations, recruitment process, training courses, and organizational structure.
-
-Built with modern web technologies, it features:
-
-- A **dark military-themed UI** inspired by ASF’s tactical branding.
-- Detailed information about **1st SFG, 5th SFG, and 10th SFG**.
-- Interactive animations and a responsive design.
+It serves as the **official website** showcasing ASF’s operations, recruitment process, organizational structure, and more.
 
 ---
 
@@ -133,16 +127,6 @@ Built with modern web technologies, it features:
 - Tailwind CSS military palette
 - Lucide React icons
 - Google Fonts: Inter + Rajdhani
-
----
-
-## 📸 Screenshots
-
-> _Soon_
-
-<p align="center">
-  <img src="" alt="" />
-</p>
 
 ---
 
