@@ -45,11 +45,11 @@ export const AboutConfig = {
         companies: [
           {
             name: "Whiskey Company: ",
-            description: "Hosts SFQC for the 1st SFG and 10th SFG alongside CWLC for all of USAR.",
+            description: "Hosts SFQC for the 1st SFG and 10th SFG alongside CWLC.",
           },
           {
             name: "Yankee Company: ",
-            description: "Hosts SFQC for the 5th SFG and 10th SFG alongside CWLC for all of USAR.",
+            description: "Hosts SFQC for the 5th SFG and 10th SFG alongside CWLC.",
           },
         ],
       },
