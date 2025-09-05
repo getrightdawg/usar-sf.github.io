@@ -486,7 +486,7 @@ export const HomeConfig = {
 
   stats: [
     { value: 100, label: "Active Personnel", suffix: "+" },
-    { value: 80, label: "Deployments/Operations Hosted", suffix: "+" },
+    { value: 90, label: "Deployments/Operations Hosted", suffix: "+" },
     { value: 98, label: "Success Rate", suffix: "%" },
   ],
 
