@@ -25,7 +25,7 @@ export const AboutConfig = {
   mission: {
     title: "OUR MISSION",
     description:
-      "To liberate the oppressed through unconventional warfare, special reconnaissance, and direct action missions while maintaining the highest standards of military excellence.",
+      "To liberate the oppressed through unconventional warfare, special reconnaissance, and direct action missions.",
   },
 
   groupsSection: {
@@ -41,15 +41,15 @@ export const AboutConfig = {
         badgeSrc: "images/logos/10SFG.png",
         tagline: "Gatekeepers of Special Forces Quality",
         description:
-          "Handles recruitment and hosts the Special Forces Qualification Course (SFQC) alongside the CWLC.",
+          "Handles recruitment and hosts the Special Forces Qualification Course (SFQC) alongside the Cold Weather Leaders Course (CWLC).",
         companies: [
           {
             name: "Whiskey Company: ",
-            description: "Hosts SFQC for the 1st SFG and 10th SFG",
+            description: "Hosts SFQC for the 1st SFG and 10th SFG alongside CWLC for all of USAR.",
           },
           {
             name: "Yankee Company: ",
-            description: "Hosts SFQC for the 5th SFG and 10th SFG",
+            description: "Hosts SFQC for the 5th SFG and 10th SFG alongside CWLC for all of USAR.",
           },
         ],
       },
@@ -58,7 +58,7 @@ export const AboutConfig = {
         badgeSrc: "images/logos/5SFG.png",
         tagline: "MILSIMs & Wargames Focused",
         description:
-          "The 5th SFG is mainly focused around Military Simulations (MILSIMS) and Wargames.",
+          "The 5th SFG is mainly focused around Military Simulations (MILSIMs) and Wargames.",
         companies: [
           { name: "Echo Company: ", description: "Centered around Wargames." },
           { name: "Delta Company: ", description: "Centered around MILSIMs." },
@@ -257,22 +257,22 @@ export const ContactConfig = {
 
   positionDuties: {
     "Commanding General":
-      "Leads the entire Army Special Operations Command (ASOC), oversees all operations, sets strategic objectives, and ensures overall mission readiness. Rank: O10",
+      "Leads the entire Army Special Operations Command (ASOC), oversees all operations, sets strategic objectives, and ensures overall mission readiness.",
 
     "Deputy Commanding General":
-      "Assists the Commanding General in managing ASOC, oversees delegated operations, and ensures continuity of command. Rank: O9",
+      "Assists the Commanding General in managing ASOC, oversees delegated operations, and ensures continuity of command.",
 
     "Command Sergeant Major":
-      "Leads the enlisted advisors within ASOC, mentors senior enlisted personnel, and ensures discipline and readiness across the enlisted ranks. Rank: E9B",
+      "Leads the enlisted advisors within ASOC, mentors senior enlisted personnel, and ensures discipline and readiness across the enlisted ranks.",
 
     "Chief of Staff":
-      "Leads the officer staff within ASOC, coordinates planning and administration, and ensures that the General’s directives are effectively executed. Rank: O8",
+      "Leads the officer staff within ASOC, coordinates planning and administration, and ensures that the General’s directives are effectively executed.",
 
     "Commanding Officer":
       "Leads the Special Forces unit, oversees all operations, and ensures mission readiness and team performance within ASF.",
 
     "Executive Officer":
-      "Assists the Commanding Officer in operations and administration, manages logistics, and ensures operational objectives are met.",
+      "Assists the Commanding Officer in operations and administration, and ensures operational objectives are met.",
 
     "Regimental Sergeant Major":
       "Senior enlisted advisor for ASF, oversees enlisted personnel, maintains discipline, and provides mentorship.",
@@ -338,7 +338,7 @@ export const CoursesConfig = {
     title: "ELITE COURSES",
     accentWord: "COURSES",
     subtitle:
-      "Specialized training programs for Army Special Forces and USAR personnel. Forge yourself in the crucible of elite military education.",
+      "Specialized training programs for Army Special Forces and USAR personnel. Learn from the best in the most hardest courses there is within USAR.",
     backgroundImage: "images/propaganda/image7.png",
     decorativeBlurs: [
       { position: "top-left", size: "w-96 h-96", opacity: "bg-asf-accent/10" },
@@ -355,19 +355,19 @@ export const CoursesConfig = {
       icon: Clock,
       title: "Duration",
       value: "1 Week",
-      description: "Intensive training program",
+      description: "All our courses typically last a week",
     },
     {
       icon: Users,
       title: "Eligibility",
       value: "All USAR",
-      description: "Open to all divisions",
+      description: "All our course are open to all of USAR",
     },
     {
       icon: Award,
       title: "Certification",
-      value: "Arctic Tab",
-      description: "Prestigious qualification",
+      value: "Tabs & Badges",
+      description: "Earn tabs and/or badges if you complete one of our courses",
     },
   ],
 
@@ -399,13 +399,13 @@ export const CoursesConfig = {
       icon: Shield,
       title: "CLASSIFIED TRAINING",
       description:
-        "Training details are classified for operational security. Course participants will receive comprehensive briefings upon enrollment.",
+        "No further details available.",
     },
     {
       icon: null,
       title: "SECURITY NOTE",
       description:
-        "This course involves specialized military tactics and procedures. All participants must maintain operational security protocols.",
+        "This course involves specialized military tactics and procedures. Course participants will receive comprehensive briefings upon enrollment and must maintain operational security protocols.",
       highlight: true,
     },
   ],
@@ -419,7 +419,7 @@ export const CoursesConfig = {
     },
     entryRequirements: {
       icon: BookOpen,
-      title: "Entry Requirements",
+      title: "ENTRY REQUIREMENTS",
       list: [
         "Active member of any USAR division and must serve 1+ month",
         "Minimum rank of E4B, Corporal",
@@ -429,7 +429,7 @@ export const CoursesConfig = {
     },
     trainingContent: {
       icon: Target,
-      title: "Training Content",
+      title: "TRAINING CONTENT",
       list: [
         "Advanced cold weather survival techniques",
         "Arctic warfare and tactical operations",
@@ -1108,7 +1108,7 @@ export const PropagandaConfig = {
         robloxId: 3820566083,
         expanded: false,
         description:
-          "has been serving in ASF since August 22, 2024, and quickly became one of its most impactful members. Recognized multiple times as Personnel of the Week, he was recently appointed as ASF’s Head Developer, creating games and maps for the community, including for the CWLC. His work earned him the prestigious Outstanding Volunteer award from Army Staff. Ever since his enlistment, he has been recognized across the ASF community for his dedication, creativity, and unwavering hard work.",
+          "has been serving in ASF since August 22, 2024, up until August 22, 2025. He quickly became one of ASF's most impactful members. Recognized multiple times as Personnel of the Week, he was appointed as ASF’s Head Developer, creating games and maps for the community, including for the CWLC. Ever since his enlistment, he has been recognized across the ASF community for his dedication, creativity, and unwavering hard work.",
       },
     ],
   },
@@ -1183,12 +1183,12 @@ export const RecruitmentConfig = {
     {
       question: "Do I need prior experience?",
       answer:
-        "Prior MILSIM or combat experience is required. While ASF will train you from the ground up through SFQC, you will be evaluated on combat multiple times. Dedication and discipline are expected.",
+        "Prior MILSIM or combat experience is required. SFQC is a course, not a school, you will be evaluated on combat multiple times. Dedication and discipline are expected.",
     },
     {
       question: "What are the reasons to be removed from SFQC?",
       answer:
-        "1. Failing one of the courses\n2. Failing to complete the course within 7 days after passing a selection/application.\n3. Caught cheating in one of the courses, resulting in a blacklist.\n4. Begging or direct messaging any staff to host a course.",
+        "Common reasons can be failing one of the courses, failing to complete the course within 7 days after passing a selection/application, caught cheating in one of the courses, resulting in a blacklist, and lastly begging or direct messaging any staff/instructor to host a course.",
     },
     {
       question: "Can I attempt to join ASF while being in another unit?",
@@ -1203,7 +1203,7 @@ export const RecruitmentConfig = {
     {
       question: "What does each phase in SFQC have?",
       answer:
-        "It depends on the group you're joining.\n1st SFG:\n- Course I: Tournament Grounds Combat Evaluation\n- Course II: Classroom, Airborne Assessment, and Practice Inspection\n5th SFG:\n- Course I: Breach Assessment and Marksmanship Test\n- Course II: Land Navigation, Recon and Compound Clearance\n- Course III: Classroom, Airborne Assessment, and Practice Inspection\n10th SFG:\n- Course I: Tournament Grounds Combat Evaluation\n- Course II: Map Introduction and Quiz\n- Course III: Classroom, Airborne Assessment, and Practice Inspection",
+        "It depends on the group you're joining, you will receive more information once you're in SFQC.",
     },
   ],
 };
